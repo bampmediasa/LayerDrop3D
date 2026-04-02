@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - LayerDrop3D | Open Source 3D Prints</title>
+    <meta name="description" content="Browse our curated selection of open source 3D printed products. Download STL files or order prints. Fast shipping, quality prints.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            background: #0f1419;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #0f1419;
+            border-bottom: 1px solid rgba(0, 168, 255, 0.1);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 20px;
+            font-weight: 700;
+            color: #00A8FF;
+            text-decoration: none;
+        }
+
+        .logo svg {
+            width: 40px;
+            height: 40px;
+        }
+
+        nav {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            color: #aaa;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover,
+        nav a.active {
+            color: #00A8FF;
+        }
+
+        .page-header {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+            color: #ffffff;
+        }
+
+        .page-intro {
+            font-size: 16px;
+            color: #aaa;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .products-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px 60px;
+        }
+
+        .filter-tags {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            padding: 8px 16px;
+            background: rgba(0, 168, 255, 0.1);
+            border: 1px solid rgba(0, 168, 255, 0.3);
+            color: #00A8FF;
+            border-radius: 20px;
+            font-size: 13px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .tag:hover,
+        .tag.active {
+            background: rgba(0, 168, 255, 0.2);
+            border-color: #00A8FF;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .product-card {
+            background: rgba(0, 168, 255, 0.02);
+            border: 1px solid rgba(0, 168, 255, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: all 0.3s;
+        }
+
+        .product-card:hover {
+            border-color: rgba(0, 168, 255, 0.3);
+            transform: translateY(-4px);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 200px;
+            background: rgba(0, 168, 255, 0.05);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 60px;
+            border-bottom: 1px solid rgba(0, 168, 255, 0.1);
+        }
+
+        .product-content {
+            padding: 20px;
+        }
+
+        .product-category {
+            display: inline-block;
+            font-size: 11px;
+            color: #00A8FF;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            opacity: 0.8;
+        }
+
+        .product-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 8px;
+        }
+
+        .product-description {
+            font-size: 14px;
+            color: #aaa;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        .license-info {
+            font-size: 12px;
+            color: #888;
+            margin-bottom: 15px;
+            padding-top: 10px;
+            border-top: 1px solid rgba(0, 168, 255, 0.1);
+        }
+
+        .license-badge {
+            display: inline-block;
+            background: rgba(0, 168, 255, 0.1);
+            border: 1px solid rgba(0, 168, 255, 0.2);
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 11px;
+            color: #00A8FF;
+            margin-right: 8px;
+            margin-bottom: 8px;
+        }
+
+        .product-actions {
+            display: flex;
+            gap: 10px;
+        }
+
+        .btn {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+
+        .btn-download {
+            background: transparent;
+            color: #00A8FF;
+            border: 1px solid #00A8FF;
+        }
+
+        .btn-download:hover {
+            background: rgba(0, 168, 255, 0.1);
+        }
+
+        .btn-order {
+            background: #00A8FF;
+            color: #0f1419;
+        }
+
+        .btn-order:hover {
+            background: #0099dd;
+            transform: translateY(-1px);
+        }
+
+        .info-banner {
+            background: rgba(0, 168, 255, 0.05);
+            border: 1px solid rgba(0, 168, 255, 0.2);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 40px;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .info-banner h3 {
+            color: #00A8FF;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        footer {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            border-top: 1px solid rgba(0, 168, 255, 0.1);
+            text-align: center;
+            color: #666;
+            font-size: 13px;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: #00A8FF;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: #0099dd;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 32px;
+            }
+
+            nav {
+                display: none;
+            }
+
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .product-actions {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="/" class="logo">
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="20" y="72" width="60" height="4" fill="#00A8FF" opacity="0.4" rx="1"/>
+                    <rect x="18" y="64" width="64" height="6" fill="none" stroke="#00A8FF" stroke-width="2.2" opacity="0.95" rx="2"/>
+                    <rect x="22" y="54" width="56" height="6" fill="none" stroke="#00A8FF" stroke-width="2.2" opacity="0.75" rx="2"/>
+                    <rect x="28" y="44" width="44" height="6" fill="none" stroke="#00A8FF" stroke-width="2.2" opacity="0.6" rx="2"/>
+                    <rect x="34" y="34" width="32" height="6" fill="none" stroke="#00A8FF" stroke-width="2.2" opacity="0.5" rx="2"/>
+                    <rect x="40" y="24" width="20" height="6" fill="none" stroke="#00A8FF" stroke-width="2.2" opacity="0.4" rx="2"/>
+                    <circle cx="50" cy="20" r="3" fill="#00A8FF" opacity="0.6"/>
+                    <line x1="50" y1="17" x2="50" y2="12" stroke="#00A8FF" stroke-width="1.5" opacity="0.4" stroke-linecap="round"/>
+                </svg>
+                LayerDrop3D
+            </a>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/" class="active">Products</a>
+                <a href="/#services">Services</a>
+                <a href="/#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-header">
+        <h1>Our Product Catalog</h1>
+        <p class="page-intro">Curated collection of open source 3D designs. Download STL files free, or order prints from LayerDrop3D.</p>
+    </div>
+
+    <div class="products-container">
+        <div class="info-banner">
+            <h3>How It Works</h3>
+            <p><strong>Option 1:</strong> Download the STL file free and print it yourself. <strong>Option 2:</strong> Let us print it for you with professional quality and fast shipping. All designs are open source with proper attribution to creators.</p>
+        </div>
+
+        <div class="filter-tags">
+            <span class="tag active">All</span>
+            <span class="tag">Organizer</span>
+            <span class="tag">Storage</span>
+            <span class="tag">Home Decor</span>
+            <span class="tag">Tool</span>
+        </div>
+
+        <div class="products-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-image">🎯</div>
+                <div class="product-content">
+                    <div class="product-category">Storage System</div>
+                    <div class="product-title">Gridfinity Modular Storage</div>
+                    <div class="product-description">Stackable, modular storage system using 42x42x7mm grid units. Perfect for workshop, office, or home organization.</div>
+                    <div class="license-info">
+                        <div class="license-badge">MIT License</div>
+                        <div class="license-badge">Commercial Use OK</div>
+                    </div>
+                    <div class="product-actions">
+                        <a href="https://gridfinity.xyz/" class="btn btn-download" target="_blank">Download File</a>
+                        <a href="/#contact" class="btn btn-order">Order Print</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="product-image">🪴</div>
+                <div class="product-content">
+                    <div class="product-category">Home Decor</div>
+                    <div class="product-title">Self-Watering Planter</div>
+                    <div class="product-description">Gravity-fed watering system for indoor plants. Customizable colors, no electronics needed. Great gift item.</div>
+                    <div class="license-info">
+                        <div class="license-badge">Creative Commons</div>
+                        <div class="license-badge">Check License</div>
+                    </div>
+                    <div class="product-actions">
+                        <a href="https://www.thingiverse.com/thing:903411" class="btn btn-download" target="_blank">Download File</a>
+                        <a href="/#contact" class="btn btn-order">Order Print</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="product-image">📦</div>
+                <div class="product-content">
+                    <div class="product-category">Storage</div>
+                    <div class="product-title">Hinged Box with Latch</div>
+                    <div class="product-description">Customizable hinged box with print-in-place design. Perfect for jewelry, storage, or gift boxes.</div>
+                    <div class="license-info">
+                        <div class="license-badge">CC-BY License</div>
+                        <div class="license-badge">Customizable</div>
+                    </div>
+                    <div class="product-actions">
+                        <a href="https://www.thingiverse.com/thing:82533" class="btn btn-download" target="_blank">Download File</a>
+                        <a href="/#contact" class="btn btn-order">Order Print</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+                <div class="product-image">🖇️</div>
+                <div class="product-content">
+                    <div class="product-category">Desk Organizer</div>
+                    <div class="product-title">Desk Organizer with Phone Stand</div>
+                    <div class="product-description">All-in-one desk solution with phone holder, business card stand, and USB storage. Professional appearance.</div>
+                    <div class="license-info">
+                        <div class="license-badge">CC License</div>
+                        <div class="license-badge">Check License</div>
+                    </div>
+                    <div class="product-actions">
+                        <a href="https://www.thingiverse.com/thing:3293859" class="btn btn-download" target="_blank">Download File</a>
+                        <a href="/#contact" class="btn btn-order">Order Print</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product-card">
+                <div class="product-image">🔌</div>
+                <div class="product-content">
+                    <div class="product-category">Cable Management</div>
+                    <div class="product-title">Wall Mount Cable Holder</div>
+                    <div class="product-description">Customizable cable organizer. Perfect for desk, entertainment center, or gaming setup. Easy to mount.</div>
+                    <div class="license-info">
+                        <div class="license-badge">CC-BY License</div>
+                        <div class="license-badge">Customizable</div>
+                    </div>
+                    <div class="product-actions">
+                        <a href="https://www.thingiverse.com/thing:1370411" class="btn btn-download" target="_blank">Download File</a>
+                        <a href="/#contact" class="btn btn-order">Order Print</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="product-card">
+                <div class="product-image">✨</div>
+                <div class="product-content">
+                    <div class="product-category">Premium Storage</div>
+                    <div class="product-title">Magnetic Hinge Box</div>
+                    <div class="product-description">Premium hinged box with integrated magnetic closure. Highly customizable for size and finish. Collector's quality.</div>
+                    <div class="license-info">
+                        <div class="license-badge">CC License</div>
+                        <div class="license-badge">Premium Option</div>
+                    </div>
+                    <div class="product-actions">
+                        <a href="https://www.thingiverse.com/thing:59332" class="btn btn-download" target="_blank">Download File</a>
+                        <a href="/#contact" class="btn btn-order">Order Print</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 7 -->
+            <div class="product-card">
+                <div class="product-image">⬡</div>
+                <div class="product-content">
+                    <div class="product-category">Modular Organizer</div>
+                    <div class="product-title">Hexagonal Desktop Organizer</div>
+                    <div class="product-description">Modern modular organizer with snap-fit connectors. Stackable and expandable. Professional aesthetic.</div>
+                    <div class="license-info">
+                        <div class="license-badge">CC License</div>
+                        <div class="license-badge">Modular Design</div>
+                    </div>
+                    <div class="product-actions">
+                        <a href="https://www.printables.com/model/1311760-hexagonal-modular-desktop-organizer-with-snap-fit" class="btn btn-download" target="_blank">Download File</a>
+                        <a href="/#contact" class="btn btn-order">Order Print</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="/">Home</a>
+            <a href="/">Products</a>
+            <a href="/#services">Services</a>
+            <a href="https://www.instagram.com/layerdrop.3d/" target="_blank">Instagram</a>
+            <a href="https://www.tiktok.com/@layerdrop3d" target="_blank">TikTok</a>
+            <a href="mailto:bampmediasa@gmail.com">Email</a>
+        </div>
+        <div>
+            <p>&copy; 2026 LayerDrop3D. All designs are open source and credited to their original creators. We offer professional 3D printing services.</p>
+        </div>
+    </footer>
+</body>
+</html>
