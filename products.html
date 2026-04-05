@@ -144,11 +144,14 @@
             width: 100%;
             height: 200px;
             background: rgba(0, 168, 255, 0.05);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 60px;
             border-bottom: 1px solid rgba(0, 168, 255, 0.1);
+            overflow: hidden;
+        }
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
         }
 
         .product-content {
@@ -348,7 +351,7 @@
         <div class="products-grid">
             <!-- Product 1 -->
             <div class="product-card">
-                <div class="product-image">🎯</div>
+                <div class="product-image"><img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=400&h=300&fit=crop" alt="Gridfinity Modular Storage" loading="lazy"></div>
                 <div class="product-content">
                     <div class="product-category">Storage System</div>
                     <div class="product-title">Gridfinity Modular Storage</div>
@@ -366,7 +369,7 @@
 
             <!-- Product 2 -->
             <div class="product-card">
-                <div class="product-image">🪴</div>
+                <div class="product-image"><img src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=400&h=300&fit=crop" alt="Self-Watering Planter" loading="lazy"></div>
                 <div class="product-content">
                     <div class="product-category">Home Decor</div>
                     <div class="product-title">Self-Watering Planter</div>
@@ -384,7 +387,7 @@
 
             <!-- Product 3 -->
             <div class="product-card">
-                <div class="product-image">📦</div>
+                <div class="product-image"><img src="https://images.unsplash.com/photo-1586075010923-2dd4570fb338?w=400&h=300&fit=crop" alt="Hinged Box with Latch" loading="lazy"></div>
                 <div class="product-content">
                     <div class="product-category">Storage</div>
                     <div class="product-title">Hinged Box with Latch</div>
@@ -402,7 +405,7 @@
 
             <!-- Product 4 -->
             <div class="product-card">
-                <div class="product-image">🖇️</div>
+                <div class="product-image"><img src="https://images.unsplash.com/photo-1593062096033-9a26b09da705?w=400&h=300&fit=crop" alt="Desk Organizer with Phone Stand" loading="lazy"></div>
                 <div class="product-content">
                     <div class="product-category">Desk Organizer</div>
                     <div class="product-title">Desk Organizer with Phone Stand</div>
@@ -420,7 +423,7 @@
 
             <!-- Product 5 -->
             <div class="product-card">
-                <div class="product-image">🔌</div>
+                <div class="product-image"><img src="https://images.unsplash.com/photo-1601524909162-ae8725290836?w=400&h=300&fit=crop" alt="Wall Mount Cable Holder" loading="lazy"></div>
                 <div class="product-content">
                     <div class="product-category">Cable Management</div>
                     <div class="product-title">Wall Mount Cable Holder</div>
@@ -438,7 +441,7 @@
 
             <!-- Product 6 -->
             <div class="product-card">
-                <div class="product-image">✨</div>
+                <div class="product-image"><img src="https://images.unsplash.com/photo-1586075010923-2dd4570fb338?w=400&h=300&fit=crop&sat=-30" alt="Magnetic Hinge Box" loading="lazy"></div>
                 <div class="product-content">
                     <div class="product-category">Premium Storage</div>
                     <div class="product-title">Magnetic Hinge Box</div>
@@ -456,7 +459,7 @@
 
             <!-- Product 7 -->
             <div class="product-card">
-                <div class="product-image">⬡</div>
+                <div class="product-image"><img src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?w=400&h=300&fit=crop" alt="Hexagonal Desktop Organizer" loading="lazy"></div>
                 <div class="product-content">
                     <div class="product-category">Modular Organizer</div>
                     <div class="product-title">Hexagonal Desktop Organizer</div>
@@ -470,114 +473,6 @@
                         <a href="/#contact" class="btn btn-order">Order Print</a>
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <!-- RC Airplane Kits Section -->
-        <div style="margin-top: 80px; padding-top: 40px; border-top: 2px solid rgba(0, 168, 255, 0.2);">
-            <h2 style="font-size: 32px; margin-bottom: 50px; text-align: center; color: #ffffff;">RC Airplane Kits</h2>
-            <p style="text-align: center; color: #aaa; margin-bottom: 40px; max-width: 700px; margin-left: auto; margin-right: auto;">Professional-grade RC airplane designs from 3D AeroVentures. Download the free STL files and print with LayerDrop3D for production-quality results. Designs optimized for 3D printing with LW-PLA, PLA, and other materials.</p>
-
-            <div class="products-grid">
-                <!-- RC 1: Micro SportCam -->
-                <div class="product-card">
-                    <div class="product-image">✈️</div>
-                    <div class="product-content">
-                        <div class="product-category">RC Airplane Kit</div>
-                        <div class="product-title">Micro SportCam</div>
-                        <div class="product-description">Sub-250g beginner-friendly aerial photography platform. Configurable as tricycle or bush plane with multiple tire options. Great for learning 3D printing and flight assembly.</div>
-                        <div class="license-info">
-                            <div class="license-badge">Free Design</div>
-                            <div class="license-badge">Multiple Materials</div>
-                            <div class="license-badge">4-Channel</div>
-                        </div>
-                        <div class="product-actions">
-                            <a href="https://www.3daeroventures.com/microsportcam" class="btn btn-download" target="_blank">Get STL Files</a>
-                            <a href="/#contact" class="btn btn-order">Order Printed Kit</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- RC 2: X-100 Infinity Wing V2 -->
-                <div class="product-card">
-                    <div class="product-image">🛩️</div>
-                    <div class="product-content">
-                        <div class="product-category">RC Airplane Kit</div>
-                        <div class="product-title">X-100 Infinity Wing V2</div>
-                        <div class="product-description">Unique closed-wing design that reduces drag and improves efficiency. Features removable wings and 3D-printed landing gear. Excellent stability with minimal servo requirements.</div>
-                        <div class="license-info">
-                            <div class="license-badge">Free Design</div>
-                            <div class="license-badge">High Performance</div>
-                            <div class="license-badge">3-Channel</div>
-                        </div>
-                        <div class="product-actions">
-                            <a href="https://www.3daeroventures.com/infinitywingv2" class="btn btn-download" target="_blank">Get STL Files</a>
-                            <a href="/#contact" class="btn btn-order">Order Printed Kit</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- RC 3: Super Chipmunk -->
-                <div class="product-card">
-                    <div class="product-image">🏆</div>
-                    <div class="product-content">
-                        <div class="product-category">RC Airplane Kit</div>
-                        <div class="product-title">Super Chipmunk</div>
-                        <div class="product-description">Aerobatic low-wing aircraft with scale details and carbon-reinforced wings. Perfect for intermediate pilots. Features realistic cowling, air scoops, and landing gear options.</div>
-                        <div class="license-info">
-                            <div class="license-badge">Free Design</div>
-                            <div class="license-badge">Aerobatic</div>
-                            <div class="license-badge">4-Channel</div>
-                        </div>
-                        <div class="product-actions">
-                            <a href="https://www.3daeroventures.com/superchipmunk" class="btn btn-download" target="_blank">Get STL Files</a>
-                            <a href="/#contact" class="btn btn-order">Order Printed Kit</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- RC 4: B-17G Flying Fortress -->
-                <div class="product-card">
-                    <div class="product-image">🎖️</div>
-                    <div class="product-content">
-                        <div class="product-category">RC Airplane Kit</div>
-                        <div class="product-title">B-17G Flying Fortress</div>
-                        <div class="product-description">WWII scale bomber reproduction with incredible detail. Includes chin turret, scale panel lines, and removable wingtips. Optional retractable landing gear. Advanced build project.</div>
-                        <div class="license-info">
-                            <div class="license-badge">Free Design</div>
-                            <div class="license-badge">Scale Model</div>
-                            <div class="license-badge">6-Channel</div>
-                        </div>
-                        <div class="product-actions">
-                            <a href="https://www.3daeroventures.com/b-17flyingfortress" class="btn btn-download" target="_blank">Get STL Files</a>
-                            <a href="/#contact" class="btn btn-order">Order Printed Kit</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- RC 5: Mini X-100 Infinity Wing -->
-                <div class="product-card">
-                    <div class="product-image">⚡</div>
-                    <div class="product-content">
-                        <div class="product-category">RC Airplane Kit</div>
-                        <div class="product-title">Mini X-100 Speed Wing</div>
-                        <div class="product-description">High-performance speed variant of Infinity Wing. Reaches 80+ mph with speed prop. Requires lightweight materials for optimal performance. Advanced pilots only.</div>
-                        <div class="license-info">
-                            <div class="license-badge">Free Design</div>
-                            <div class="license-badge">High Speed</div>
-                            <div class="license-badge">3-Channel</div>
-                        </div>
-                        <div class="product-actions">
-                            <a href="https://www.3daeroventures.com/miniinfinitywing" class="btn btn-download" target="_blank">Get STL Files</a>
-                            <a href="/#contact" class="btn btn-order">Order Printed Kit</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div style="text-align: center; margin-top: 40px; padding: 30px; background: rgba(0, 168, 255, 0.05); border-radius: 8px; border: 1px solid rgba(0, 168, 255, 0.1);">
-                <p style="color: #aaa; margin-bottom: 15px;"><strong>All RC airplane designs are courtesy of 3D AeroVentures</strong> — a community-driven project providing free, high-quality 3D-printed aircraft designs.</p>
-                <p style="color: #888; font-size: 13px;">When you order a printed kit from LayerDrop3D, you receive: professionally printed parts, comprehensive build guides, material optimization, and fast USA shipping. Download the STL files free from 3D AeroVentures.</p>
             </div>
         </div>
     </div>
