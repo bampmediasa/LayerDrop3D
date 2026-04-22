@@ -1,0 +1,1677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
+    <title>LayerDrop3D - 3D Print-on-Demand Service | RC Airplane Kits | Custom Prints</title>
+    <meta name="description" content="3D printing service offering custom prints, RC airplane kits, and printer rental. High-quality FDM printing with fast USA shipping.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            background: #0f1419;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #0f1419;
+            border-bottom: 1px solid rgba(0, 168, 255, 0.1);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+=======
+    <title>LayerDrop3D - 3D Print-on-Demand Service</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f1419;
+            color: #ffffff;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+        /* HEADER */
+        .promo-banner {
+            background: linear-gradient(135deg, #00A8FF 0%, #0088cc 100%);
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        .promo-banner a { color: white; text-decoration: underline; }
+
+        header {
+            background: rgba(15, 20, 25, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 16px 0;
+        }
+
+        .header-inner {
+>>>>>>> c9ef6f1 (Update: real 3D printer photos, RC plane images, SVG icons, no emoji)
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+<<<<<<< HEAD
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 20px;
+            font-weight: 700;
+            color: #00A8FF;
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: rgba(0, 168, 255, 0.1);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        nav {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            color: #aaa;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover,
+        nav a.active {
+            color: #00A8FF;
+        }
+
+        .hero {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .hero-logo {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 30px;
+            background: rgba(0, 168, 255, 0.05);
+            border: 2px solid rgba(0, 168, 255, 0.2);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 60px;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #ffffff;
+            line-height: 1.2;
+        }
+
+        .tagline {
+            font-size: 18px;
+            color: #aaa;
+            margin-bottom: 40px;
+            max-width: 700px;
+=======
+            font-size: 26px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+        }
+        .logo span { color: #00A8FF; }
+
+        nav { display: flex; gap: 28px; align-items: center; }
+        nav a {
+            color: #a0aab4;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        nav a:hover { color: #ffffff; }
+
+        .nav-cta {
+            background: #00A8FF;
+            color: white !important;
+            padding: 8px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: background 0.2s !important;
+        }
+        .nav-cta:hover { background: #0090dd; }
+
+        /* Mobile nav */
+        .mobile-toggle { display: none; background: none; border: none; color: white; font-size: 24px; cursor: pointer; }
+
+        @media (max-width: 768px) {
+            .mobile-toggle { display: block; }
+            nav { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: #0f1419; padding: 20px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+            nav.open { display: flex; }
+        }
+
+        /* HERO */
+        .hero {
+            padding: 100px 0 80px;
+            text-align: center;
+            background: radial-gradient(ellipse at center top, rgba(0,168,255,0.08) 0%, transparent 60%);
+        }
+        .hero-badge {
+            display: inline-block;
+            background: rgba(0,168,255,0.12);
+            color: #00A8FF;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 24px;
+            border: 1px solid rgba(0,168,255,0.2);
+        }
+        .hero h1 {
+            font-size: clamp(36px, 5vw, 56px);
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 20px;
+            letter-spacing: -1px;
+        }
+        .hero h1 span { color: #00A8FF; }
+        .hero p {
+            font-size: 18px;
+            color: #8b95a1;
+            max-width: 600px;
+            margin: 0 auto 36px;
+        }
+        .hero-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+        .btn-primary {
+            background: #00A8FF;
+            color: white;
+            padding: 14px 32px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: inline-block;
+        }
+        .btn-primary:hover { background: #0090dd; transform: translateY(-1px); }
+        .btn-secondary {
+            background: rgba(255,255,255,0.06);
+            color: white;
+            padding: 14px 32px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            border: 1px solid rgba(255,255,255,0.12);
+            cursor: pointer;
+            transition: all 0.2s;
+            display: inline-block;
+        }
+        .btn-secondary:hover { background: rgba(255,255,255,0.1); }
+
+        /* HOW IT WORKS */
+        .section { padding: 80px 0; }
+        .section-title {
+            text-align: center;
+            font-size: 32px;
+            font-weight: 800;
+            margin-bottom: 12px;
+            letter-spacing: -0.5px;
+        }
+        .section-subtitle {
+            text-align: center;
+            color: #8b95a1;
+            font-size: 16px;
+            margin-bottom: 48px;
+            max-width: 560px;
+>>>>>>> c9ef6f1 (Update: real 3D printer photos, RC plane images, SVG icons, no emoji)
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+<<<<<<< HEAD
+        .cta-buttons {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 60px;
+        }
+
+        .btn {
+            padding: 14px 32px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: #00A8FF;
+            color: #0f1419;
+        }
+
+        .btn-primary:hover {
+            background: #0099dd;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: #00A8FF;
+            border: 2px solid #00A8FF;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(0, 168, 255, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-bottom: 80px;
+        }
+
+        .feature {
+            background: rgba(0, 168, 255, 0.05);
+            border: 1px solid rgba(0, 168, 255, 0.1);
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            transition: all 0.3s;
+            display: block;
+        }
+
+        .feature:hover {
+            border-color: rgba(0, 168, 255, 0.3);
+            background: rgba(0, 168, 255, 0.08);
+            transform: translateY(-4px);
+            cursor: pointer;
+        }
+
+        .feature-icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .feature h3 {
+            color: #00A8FF;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .feature p {
+            color: #aaa;
+            font-size: 14px;
+        }
+
+        .products-preview {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 20px;
+            border-top: 1px solid rgba(0, 168, 255, 0.1);
+        }
+
+        .section-title {
+            font-size: 32px;
+            margin-bottom: 50px;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .product-card {
+            background: rgba(0, 168, 255, 0.02);
+            border: 1px solid rgba(0, 168, 255, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: all 0.3s;
+        }
+
+        .product-card:hover {
+            border-color: rgba(0, 168, 255, 0.3);
+            transform: translateY(-4px);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 220px;
+            background: rgba(0, 168, 255, 0.05);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 60px;
+            border-bottom: 1px solid rgba(0, 168, 255, 0.1);
+        }
+
+        .product-info {
+            padding: 20px;
+        }
+
+        .product-info h3 {
+            color: #00A8FF;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .product-info p {
+            color: #aaa;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .view-all {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        footer {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px 40px;
+            border-top: 1px solid rgba(0, 168, 255, 0.1);
+            text-align: center;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: #00A8FF;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: #0099dd;
+        }
+
+        .footer-bottom {
+            color: #666;
+            font-size: 13px;
+            border-top: 1px solid rgba(0, 168, 255, 0.1);
+            padding-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 36px;
+            }
+
+            nav {
+                display: none;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+
+            .hero {
+                padding: 60px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="/" class="logo">
+                <svg class="logo-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="width: 40px; height: 40px;">
+                    <rect x="20" y="72" width="60" height="4" fill="#00A8FF" opacity="0.4" rx="1"/>
+                    <rect x="18" y="64" width="64" height="6" fill="none" stroke="#00A8FF" stroke-width="2.2" opacity="0.95" rx="2"/>
+                    <rect x="22" y="54" width="56" height="6" fill="none" stroke="#00A8FF" stroke-width="2.2" opacity="0.75" rx="2"/>
+                    <rect x="28" y="44" width="44" height="6" fill="none" stroke="#00A8FF" stroke-width="2.2" opacity="0.6" rx="2"/>
+                    <rect x="34" y="34" width="32" height="6" fill="none" stroke="#00A8FF" stroke-width="2.2" opacity="0.5" rx="2"/>
+                    <rect x="40" y="24" width="20" height="6" fill="none" stroke="#00A8FF" stroke-width="2.2" opacity="0.4" rx="2"/>
+                    <circle cx="50" cy="20" r="3" fill="#00A8FF" opacity="0.6"/>
+                    <line x1="50" y1="17" x2="50" y2="12" stroke="#00A8FF" stroke-width="1.5" opacity="0.4" stroke-linecap="round"/>
+                </svg>
+                LayerDrop3D
+            </a>
+            <nav>
+                <a href="products.html" class="active">Products</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-logo">🖨️</div>
+            <h1>Your Ideas, Printed & Delivered</h1>
+            <p class="tagline">Custom 3D prints, complete RC airplane kits, and professional printer rental. High-quality FDM printing with fast USA shipping.</p>
+
+            <div class="cta-buttons">
+                <a href="products.html" class="btn btn-primary">Shop Products</a>
+                <a href="#contact" class="btn btn-secondary">Contact Us</a>
+            </div>
+
+            <div class="features">
+                <a href="products.html" style="text-decoration: none; color: inherit;" class="feature">
+                    <div class="feature-icon">✓</div>
+                    <h3>Custom Prints</h3>
+                    <p>Bring your designs to life with professional 3D printing</p>
+                </a>
+                <a href="products.html" style="text-decoration: none; color: inherit;" class="feature">
+                    <div class="feature-icon">✈️</div>
+                    <h3>RC Kits</h3>
+                    <p>Complete airplane kits with all components included</p>
+                </a>
+                <a href="products.html" style="text-decoration: none; color: inherit;" class="feature">
+                    <div class="feature-icon">🔌</div>
+                    <h3>Printer Rental</h3>
+                    <p>Rent professional 3D printers by the hour</p>
+                </a>
+                <a href="products.html" style="text-decoration: none; color: inherit;" class="feature">
+                    <div class="feature-icon">📦</div>
+                    <h3>Fast Shipping</h3>
+                    <p>Quick turnaround and reliable USA shipping</p>
+                </a>
+                <a href="products.html" style="text-decoration: none; color: inherit;" class="feature">
+                    <div class="feature-icon">💙</div>
+                    <h3>Quality Materials</h3>
+                    <p>Premium filament and professional equipment</p>
+                </a>
+                <a href="products.html" style="text-decoration: none; color: inherit;" class="feature">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Expert Support</h3>
+                    <p>Guidance and assistance for your projects</p>
+                </a>
+            </div>
+        </section>
+
+        <section class="products-preview" id="products">
+            <h2 class="section-title">Featured Products</h2>
+
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">✈️</div>
+                    <div class="product-info">
+                        <h3>RC Airplane Kits</h3>
+                        <p>Complete 3D printed RC airplane kits with motors, batteries, and servos</p>
+                        <a href="#contact" class="btn btn-secondary" style="display: block; text-align: center;">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">🎨</div>
+                    <div class="product-info">
+                        <h3>Custom Prints</h3>
+                        <p>Design your own 3D prints or choose from our catalog</p>
+                        <a href="#contact" class="btn btn-secondary" style="display: block; text-align: center;">Request Custom</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">🎁</div>
+                    <div class="product-info">
+                        <h3>Seasonal Items</h3>
+                        <p>Holiday decor, fun gadgets, and useful tools</p>
+                        <a href="#contact" class="btn btn-secondary" style="display: block; text-align: center;">Explore</a>
+=======
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 24px;
+        }
+        .step-card {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.06);
+            border-radius: 16px;
+            padding: 32px 24px;
+            text-align: center;
+            transition: all 0.3s;
+        }
+        .step-card:hover { background: rgba(255,255,255,0.05); border-color: rgba(0,168,255,0.2); transform: translateY(-4px); }
+        .step-num {
+            width: 48px; height: 48px;
+            background: rgba(0,168,255,0.12);
+            color: #00A8FF;
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-weight: 800; font-size: 20px;
+            margin: 0 auto 16px;
+        }
+        .step-card h3 { font-size: 18px; font-weight: 700; margin-bottom: 8px; }
+        .step-card p { color: #8b95a1; font-size: 14px; }
+
+        /* HERO IMAGE */
+        .hero-image-wrap {
+            margin-top: 48px;
+            border-radius: 20px;
+            overflow: hidden;
+            border: 1px solid rgba(255,255,255,0.08);
+            max-width: 880px;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0 32px 80px rgba(0,0,0,0.4);
+        }
+        .hero-printer-img {
+            width: 100%;
+            height: 420px;
+            object-fit: cover;
+            display: block;
+        }
+        @media (max-width: 768px) { .hero-printer-img { height: 240px; } }
+
+        /* SERVICES */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+        }
+        .service-card {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.06);
+            border-radius: 16px;
+            overflow: hidden;
+            transition: all 0.3s;
+        }
+        .service-card:hover { border-color: rgba(0,168,255,0.3); transform: translateY(-4px); }
+        .service-card-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+        .service-card-body { padding: 24px; }
+        .service-card h3 { font-size: 20px; font-weight: 700; margin-bottom: 8px; }
+        .service-card p { color: #8b95a1; font-size: 15px; margin-bottom: 16px; }
+        .service-price {
+            display: inline-block;
+            background: rgba(0,168,255,0.1);
+            color: #00A8FF;
+            padding: 6px 14px;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        /* RC DESIGNS GALLERY */
+        .designs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 28px;
+        }
+        .design-card {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.06);
+            border-radius: 16px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .design-card:hover { border-color: rgba(0,168,255,0.3); transform: translateY(-4px); }
+        .design-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            display: block;
+        }
+        .design-info { padding: 20px; }
+        .design-info h3 { font-size: 18px; font-weight: 700; margin-bottom: 6px; }
+        .design-info p { color: #8b95a1; font-size: 14px; margin-bottom: 12px; }
+        .design-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
+        .design-tag {
+            background: rgba(255,255,255,0.06);
+            color: #a0aab4;
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+        .design-actions { display: flex; gap: 10px; align-items: center; }
+        .design-btn {
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 13px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s;
+            cursor: pointer;
+            border: none;
+        }
+        .design-btn-primary { background: #00A8FF; color: white; }
+        .design-btn-primary:hover { background: #0090dd; }
+        .design-btn-outline { background: transparent; color: #00A8FF; border: 1px solid rgba(0,168,255,0.3); }
+        .design-btn-outline:hover { background: rgba(0,168,255,0.08); }
+
+        /* MODAL */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.8);
+            backdrop-filter: blur(8px);
+            z-index: 2000;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .modal-overlay.active { display: flex; }
+        .modal {
+            background: #1a2028;
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 20px;
+            max-width: 720px;
+            width: 100%;
+            max-height: 90vh;
+            overflow-y: auto;
+        }
+        .modal-img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 20px 20px 0 0;
+        }
+        .modal-body { padding: 28px; }
+        .modal-body h2 { font-size: 24px; font-weight: 800; margin-bottom: 8px; }
+        .modal-body .modal-subtitle { color: #8b95a1; font-size: 15px; margin-bottom: 20px; }
+        .modal-section { margin-bottom: 20px; }
+        .modal-section h4 { color: #00A8FF; font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; }
+        .modal-section ul { list-style: none; padding: 0; }
+        .modal-section li { padding: 4px 0; color: #c0c8d0; font-size: 14px; }
+        .modal-section li::before { content: "→ "; color: #00A8FF; font-weight: 700; }
+        .modal-close {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            background: rgba(0,0,0,0.5);
+            color: white;
+            border: none;
+            width: 36px; height: 36px;
+            border-radius: 50%;
+            font-size: 18px;
+            cursor: pointer;
+            display: flex; align-items: center; justify-content: center;
+        }
+        .modal-footer { display: flex; gap: 12px; margin-top: 20px; }
+        .modal-footer a, .modal-footer button {
+            flex: 1;
+            padding: 12px 20px;
+            border-radius: 10px;
+            font-size: 14px;
+            font-weight: 700;
+            text-decoration: none;
+            text-align: center;
+            cursor: pointer;
+            border: none;
+            transition: all 0.2s;
+        }
+
+        /* PRICING TABLE */
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+        }
+        .pricing-card {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.06);
+            border-radius: 16px;
+            padding: 36px;
+            text-align: center;
+            transition: all 0.3s;
+            position: relative;
+        }
+        .pricing-card.featured {
+            border-color: rgba(0,168,255,0.4);
+            background: rgba(0,168,255,0.04);
+        }
+        .pricing-card.featured::before {
+            content: "Most Popular";
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #00A8FF;
+            color: white;
+            padding: 4px 16px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 700;
+        }
+        .pricing-card h3 { font-size: 22px; font-weight: 700; margin-bottom: 8px; }
+        .pricing-card .price { font-size: 36px; font-weight: 800; color: #00A8FF; margin-bottom: 4px; }
+        .pricing-card .price-sub { color: #8b95a1; font-size: 14px; margin-bottom: 20px; }
+        .pricing-card ul { list-style: none; padding: 0; margin-bottom: 24px; text-align: left; }
+        .pricing-card li { padding: 8px 0; color: #c0c8d0; font-size: 14px; border-bottom: 1px solid rgba(255,255,255,0.04); }
+        .pricing-card li::before { content: "\2713 "; color: #00d68f; font-weight: 700; }
+
+        /* FAQ */
+        .faq-list { max-width: 700px; margin: 0 auto; }
+        .faq-item {
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+        }
+        .faq-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 16px;
+            background: none;
+            border: none;
+            color: white;
+            width: 100%;
+            text-align: left;
+        }
+        .faq-question:hover { color: #00A8FF; }
+        .faq-question .arrow { transition: transform 0.3s; font-size: 20px; color: #8b95a1; }
+        .faq-question.active .arrow { transform: rotate(45deg); }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            color: #8b95a1;
+            font-size: 15px;
+            line-height: 1.7;
+        }
+        .faq-answer.open { max-height: 200px; padding-bottom: 20px; }
+
+        /* CONTACT */
+        .contact-section {
+            background: rgba(0,168,255,0.04);
+            border-top: 1px solid rgba(0,168,255,0.1);
+            border-bottom: 1px solid rgba(0,168,255,0.1);
+        }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+        @media (max-width: 768px) { .contact-grid { grid-template-columns: 1fr; } }
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 14px 16px;
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 10px;
+            color: white;
+            font-family: 'Inter', sans-serif;
+            font-size: 15px;
+            margin-bottom: 12px;
+            transition: border-color 0.2s;
+        }
+        .contact-form input:focus,
+        .contact-form textarea:focus { outline: none; border-color: #00A8FF; }
+        .contact-form textarea { min-height: 120px; resize: vertical; }
+
+        /* FOOTER */
+        footer {
+            background: rgba(0,0,0,0.3);
+            border-top: 1px solid rgba(255,255,255,0.06);
+            padding: 48px 0 24px;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 32px;
+        }
+        @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; } }
+        .footer-brand p { color: #8b95a1; font-size: 14px; margin-top: 12px; }
+        .footer-links h4 { font-size: 14px; font-weight: 700; margin-bottom: 12px; color: #a0aab4; text-transform: uppercase; letter-spacing: 0.5px; }
+        .footer-links a { display: block; color: #8b95a1; text-decoration: none; font-size: 14px; padding: 4px 0; transition: color 0.2s; }
+        .footer-links a:hover { color: #00A8FF; }
+        .footer-bottom { text-align: center; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.06); color: #5a6370; font-size: 13px; }
+
+        /* SHOP CATEGORIES */
+        .shop-categories { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-bottom: 32px; }
+        .shop-cat-btn {
+            padding: 8px 20px; border-radius: 20px; font-size: 14px; font-weight: 600;
+            cursor: pointer; border: 1px solid rgba(255,255,255,0.12); background: rgba(255,255,255,0.04);
+            color: #a0aab4; transition: all 0.2s;
+        }
+        .shop-cat-btn:hover, .shop-cat-btn.active { background: #00A8FF; color: white; border-color: #00A8FF; }
+        .shop-grid {
+            display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 20px;
+        }
+        .shop-item {
+            background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06);
+            border-radius: 14px; overflow: hidden; transition: all 0.3s; cursor: pointer;
+        }
+        .shop-item:hover { border-color: rgba(0,168,255,0.3); transform: translateY(-3px); }
+        .shop-item-img {
+            width: 100%; height: 200px; object-fit: cover; display: block;
+            background: rgba(255,255,255,0.02);
+        }
+        .shop-item-body { padding: 16px; }
+        .shop-item-body h3 { font-size: 16px; font-weight: 700; margin-bottom: 4px; }
+        .shop-item-body p { color: #8b95a1; font-size: 13px; margin-bottom: 10px; }
+        .shop-item-footer { display: flex; justify-content: space-between; align-items: center; }
+        .shop-item-price { font-size: 18px; font-weight: 800; color: #00A8FF; }
+        .shop-item-badge {
+            font-size: 11px; font-weight: 600; padding: 3px 10px; border-radius: 10px;
+            background: rgba(0,214,143,0.12); color: #00d68f;
+        }
+        .shop-item-badge.seasonal { background: rgba(255,165,0,0.12); color: #FFA500; }
+
+        /* Screen reader only */
+        .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0f1419; }
+        ::-webkit-scrollbar-thumb { background: #2a3038; border-radius: 4px; }
+    </style>
+</head>
+<body>
+
+<!-- PROMO BANNER -->
+<div class="promo-banner">
+    Now offering custom 3D printing services — <a href="#pricing">see our pricing</a>
+</div>
+
+<!-- HEADER -->
+<header>
+    <div class="container header-inner">
+        <div class="logo">Layer<span>Drop</span>3D</div>
+        <button class="mobile-toggle" onclick="document.querySelector('nav').classList.toggle('open')">&#9776;</button>
+        <nav>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#services">Services</a>
+            <a href="#shop">Shop</a>
+            <a href="#designs">RC Designs</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contact" class="nav-cta">Get a Quote</a>
+        </nav>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-badge">3D Print-on-Demand Service</div>
+        <h1>Your Ideas, <span>Printed & Delivered</span></h1>
+        <p>Send us your 3D files and we'll print them with precision and ship them to your door. From RC airplane kits to custom projects — we bring your designs to life.</p>
+        <div class="hero-buttons">
+            <a href="#contact" class="btn-primary">Get a Free Quote</a>
+            <a href="#designs" class="btn-secondary">Browse RC Designs</a>
+        </div>
+        <div class="hero-image-wrap">
+            <img class="hero-printer-img" src="https://images.unsplash.com/photo-1563520239648-a5e2bfb90b22?w=1400&h=700&fit=crop&q=85" alt="Professional 3D printer in action" loading="eager">
+        </div>
+    </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section" id="how-it-works">
+    <div class="container">
+        <h2 class="section-title">How It Works</h2>
+        <p class="section-subtitle">Three simple steps from file to finished print, delivered to your door.</p>
+        <div class="steps-grid">
+            <div class="step-card">
+                <div class="step-num">1</div>
+                <h3>Send Your File</h3>
+                <p>Upload your STL file or choose from our recommended RC airplane designs. We accept STL, OBJ, and 3MF formats.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-num">2</div>
+                <h3>We Print It</h3>
+                <p>Our printers run your job using the best settings for your project. PLA, LW-PLA, PETG, TPU — we match the material to your needs.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-num">3</div>
+                <h3>Get It Delivered</h3>
+                <p>Your finished print is carefully packaged and shipped straight to your door. Typical turnaround is 3-7 business days.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section" id="services" style="background: rgba(255,255,255,0.01);">
+    <div class="container">
+        <h2 class="section-title">Our Services</h2>
+        <p class="section-subtitle">Whether you have your own file or need help finding a design, we've got you covered.</p>
+        <div class="services-grid">
+            <div class="service-card">
+                <img class="service-card-img" src="https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?w=600&h=300&fit=crop&q=80" alt="3D printer printing a part" loading="lazy">
+                <div class="service-card-body">
+                    <h3>Print Your File</h3>
+                    <p>Have a 3D file ready? Send it to us and we'll print it with precision. We handle the slicing, material selection, and quality control so you don't have to.</p>
+                    <span class="service-price">Starting at $15 + materials</span>
+                </div>
+            </div>
+            <div class="service-card">
+                <img class="service-card-img" src="https://images.squarespace-cdn.com/content/v1/5d38652f9566fe0001a8bab9/1675118871149-OD32CAEGCHB6MPWRV541/1+-+3DAeroventures+B-17G+med+res.jpg" alt="3D printed RC airplane kit" loading="lazy">
+                <div class="service-card-body">
+                    <h3>RC Airplane Kits</h3>
+                    <p>We print complete airframe kits from top open-source RC airplane designs using lightweight LW-PLA. Pick a design, and we'll print and ship the full kit.</p>
+                    <span class="service-price">$80 - $200 per kit</span>
+                </div>
+            </div>
+            <div class="service-card">
+                <img class="service-card-img" src="https://images.unsplash.com/photo-1565043666747-69f6646db940?w=600&h=300&fit=crop&q=80" alt="3D printers running batch jobs" loading="lazy">
+                <div class="service-card-body">
+                    <h3>Printer Time Rental</h3>
+                    <p>Need a lot of parts? Rent our printers by the hour. Send us your files and we'll run them back-to-back. Great for batch jobs and prototyping runs.</p>
+                    <span class="service-price">$2.50/hr + $10 setup</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SHOP -->
+<section class="section" id="shop">
+    <div class="container">
+        <h2 class="section-title">Shop Prints</h2>
+        <p class="section-subtitle">Ready-to-ship 3D prints for every season. Home decor, gifts, gadgets, and useful everyday items.</p>
+
+        <div class="shop-categories">
+            <button class="shop-cat-btn active" onclick="filterShop('all')">All</button>
+            <button class="shop-cat-btn" onclick="filterShop('seasonal')">Seasonal</button>
+            <button class="shop-cat-btn" onclick="filterShop('home')">Home Decor</button>
+            <button class="shop-cat-btn" onclick="filterShop('gadgets')">Gadgets & Tools</button>
+            <button class="shop-cat-btn" onclick="filterShop('gifts')">Gift Ideas</button>
+        </div>
+
+        <div class="shop-grid" id="shop-grid"></div>
+
+        <p style="text-align:center; margin-top:28px; color:#8b95a1; font-size:14px;">
+            Don't see what you need? <a href="#contact" style="color:#00A8FF;">Request a custom print</a> — we can make almost anything.
+        </p>
+    </div>
+</section>
+
+<!-- RC AIRPLANE DESIGNS -->
+<section class="section" id="designs">
+    <div class="container">
+        <h2 class="section-title">RC Airplane Designs</h2>
+        <p class="section-subtitle">Browse these popular designs from 3DAeroventures. Pick one and we'll print the complete airframe kit for you.</p>
+
+        <div class="designs-grid">
+
+            <!-- X-100 Infinity Wing V2 -->
+            <div class="design-card" onclick="openModal('infinitywing')">
+                <img src="https://images.squarespace-cdn.com/content/v1/5d38652f9566fe0001a8bab9/1597857980008-Y46PKD2EYN2B8LDRZLK7/Infinity+Wing+v2-4.jpg" alt="X-100 Infinity Wing V2" loading="lazy">
+                <div class="design-info">
+                    <h3>X-100 Infinity Wing V2</h3>
+                    <p>A versatile flying wing with "super-structure" design. Great for sport aerobatics with removable wings for easy transport.</p>
+                    <div class="design-tags">
+                        <span class="design-tag">3-Channel</span>
+                        <span class="design-tag">LW-PLA / PLA / PETG</span>
+                        <span class="design-tag">Beginner+</span>
+                    </div>
+                    <div class="design-actions">
+                        <button class="design-btn design-btn-primary" onclick="event.stopPropagation(); openModal('infinitywing')">View Details</button>
+                        <a class="design-btn design-btn-outline" href="https://www.3daeroventures.com/infinitywingv2" target="_blank" onclick="event.stopPropagation()">Source Files</a>
+                        <a class="design-btn design-btn-outline" href="https://www.3daeroventures.com/s/X-100-Infinity-Wing-V2-Build-Guide-01312021.pdf" target="_blank" onclick="event.stopPropagation()" style="color:#00d68f;border-color:rgba(0,214,143,0.3);">Guide</a>
+>>>>>>> c9ef6f1 (Update: real 3D printer photos, RC plane images, SVG icons, no emoji)
+                    </div>
+                </div>
+            </div>
+
+<<<<<<< HEAD
+            <div class="view-all">
+                <a href="products.html" class="btn btn-primary">Browse Full Catalog</a>
+            </div>
+        </section>
+
+        <section class="products-preview" id="services">
+            <h2 class="section-title">Services</h2>
+
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">⏰</div>
+                    <div class="product-info">
+                        <h3>Printer Rental</h3>
+                        <p>Hourly access to professional Bambu Lab and Creality 3D printers</p>
+                        <a href="#contact" class="btn btn-secondary" style="display: block; text-align: center;">Book Now</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">🔧</div>
+                    <div class="product-info">
+                        <h3>Print Service</h3>
+                        <p>Send us your design, we'll print and ship it to you</p>
+                        <a href="#contact" class="btn btn-secondary" style="display: block; text-align: center;">Get Quote</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">📋</div>
+                    <div class="product-info">
+                        <h3>Consultation</h3>
+                        <p>Expert advice for your 3D printing projects</p>
+                        <a href="#contact" class="btn btn-secondary" style="display: block; text-align: center;">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="footer-links">
+            <a href="https://www.instagram.com/layerdrop.3d/" target="_blank">Instagram</a>
+            <a href="https://www.tiktok.com/@layerdrop3d" target="_blank">TikTok</a>
+            <a href="mailto:bampmediasa@gmail.com">Email</a>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 LayerDrop3D. All rights reserved. | Your Ideas, Printed & Delivered</p>
+        </div>
+    </footer>
+</body>
+</html>
+=======
+            <!-- B-17 Flying Fortress -->
+            <div class="design-card" onclick="openModal('b17')">
+                <img src="https://images.squarespace-cdn.com/content/v1/5d38652f9566fe0001a8bab9/1675118871149-OD32CAEGCHB6MPWRV541/1+-+3DAeroventures+B-17G+med+res.jpg" alt="B-17 Flying Fortress" loading="lazy">
+                <div class="design-info">
+                    <h3>B-17G Flying Fortress</h3>
+                    <p>A stunning scale model of the iconic WWII bomber. Features panel lines, scale TPU tires, dummy radial engines, and optional retracts.</p>
+                    <div class="design-tags">
+                        <span class="design-tag">6-Channel</span>
+                        <span class="design-tag">LW-PLA</span>
+                        <span class="design-tag">Intermediate</span>
+                    </div>
+                    <div class="design-actions">
+                        <button class="design-btn design-btn-primary" onclick="event.stopPropagation(); openModal('b17')">View Details</button>
+                        <a class="design-btn design-btn-outline" href="https://www.3daeroventures.com/b-17flyingfortress" target="_blank" onclick="event.stopPropagation()">Source Files</a>
+                        <a class="design-btn design-btn-outline" href="https://www.3daeroventures.com/s/B-17-Flying-Fortress-Specs-Recommended-Setup-and-Hardware-Guide-02022023.pdf" target="_blank" onclick="event.stopPropagation()" style="color:#00d68f;border-color:rgba(0,214,143,0.3);">Guide</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Super Chipmunk -->
+            <div class="design-card" onclick="openModal('chipmunk')">
+                <img src="https://images.squarespace-cdn.com/content/v1/5d38652f9566fe0001a8bab9/1609040169910-GYS4P7A2NC99QCT72X3D/6%2B-%2BSuper%2BChipmunk%2Bon%2BStage.jpg" alt="Super Chipmunk" loading="lazy">
+                <div class="design-info">
+                    <h3>Super Chipmunk</h3>
+                    <p>A 4-channel aerobatic plane with carbon fiber reinforcement and scale features. A tribute to Art Scholl's famous aircraft.</p>
+                    <div class="design-tags">
+                        <span class="design-tag">4-Channel</span>
+                        <span class="design-tag">LW-PLA</span>
+                        <span class="design-tag">Intermediate</span>
+                    </div>
+                    <div class="design-actions">
+                        <button class="design-btn design-btn-primary" onclick="event.stopPropagation(); openModal('chipmunk')">View Details</button>
+                        <a class="design-btn design-btn-outline" href="https://www.3daeroventures.com/superchipmunk" target="_blank" onclick="event.stopPropagation()">Source Files</a>
+                        <a class="design-btn design-btn-outline" href="https://static1.squarespace.com/static/5d38652f9566fe0001a8bab9/t/61cdd8a6170c3473f4877bc6/1640880300774/Super+Chipmunk+Build+Guide+12.30.2021.pdf" target="_blank" onclick="event.stopPropagation()" style="color:#00d68f;border-color:rgba(0,214,143,0.3);">Guide</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Micro SportCam -->
+            <div class="design-card" onclick="openModal('sportcam')">
+                <img src="https://images.squarespace-cdn.com/content/v1/5d38652f9566fe0001a8bab9/1590776340133-LW5ZJLKP5JWKHEKGLV7L/1-+MSC.JPG" alt="Micro SportCam" loading="lazy">
+                <div class="design-info">
+                    <h3>Micro SportCam</h3>
+                    <p>A sub-250g twin-boom pusher inspired by the AirCam. Beginner-friendly with 4-channel control and lightweight LW-PLA construction.</p>
+                    <div class="design-tags">
+                        <span class="design-tag">4-Channel</span>
+                        <span class="design-tag">LW-PLA</span>
+                        <span class="design-tag">Beginner</span>
+                    </div>
+                    <div class="design-actions">
+                        <button class="design-btn design-btn-primary" onclick="event.stopPropagation(); openModal('sportcam')">View Details</button>
+                        <a class="design-btn design-btn-outline" href="https://www.3daeroventures.com/microsportcam" target="_blank" onclick="event.stopPropagation()">Source Files</a>
+                        <a class="design-btn design-btn-outline" href="https://www.3daeroventures.com/s/Micro-SportCam-Build-Guide-05152020.pdf" target="_blank" onclick="event.stopPropagation()" style="color:#00d68f;border-color:rgba(0,214,143,0.3);">Guide</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mini X-100 Infinity Wing -->
+            <div class="design-card" onclick="openModal('miniinfinity')">
+                <img src="https://images.squarespace-cdn.com/content/v1/5d38652f9566fe0001a8bab9/1629864417429-Z3PU4GJ1A5TRKNT2K8OT/IMG_5706.jpg" alt="Mini X-100 Infinity Wing" loading="lazy">
+                <div class="design-info">
+                    <h3>Mini X-100 Infinity Wing</h3>
+                    <p>The compact speed demon — same flying characteristics as the V2 but smaller and faster. Reaches speeds over 80mph with the recommended setup.</p>
+                    <div class="design-tags">
+                        <span class="design-tag">3-Channel</span>
+                        <span class="design-tag">LW-PLA Only</span>
+                        <span class="design-tag">Intermediate</span>
+                    </div>
+                    <div class="design-actions">
+                        <button class="design-btn design-btn-primary" onclick="event.stopPropagation(); openModal('miniinfinity')">View Details</button>
+                        <a class="design-btn design-btn-outline" href="https://www.3daeroventures.com/miniinfinitywing" target="_blank" onclick="event.stopPropagation()">Source Files</a>
+                        <a class="design-btn design-btn-outline" href="https://static1.squarespace.com/static/5d38652f9566fe0001a8bab9/t/6125bd4483fc724966ae3f18/1629863251219/Mini+X-100+Infinity+Wing+Build+Guide+08.24.2021.pdf" target="_blank" onclick="event.stopPropagation()" style="color:#00d68f;border-color:rgba(0,214,143,0.3);">Guide</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- X-100 Infinity Wing Upgrade -->
+            <div class="design-card" onclick="openModal('upgrade')">
+                <img src="https://images.squarespace-cdn.com/content/v1/5d38652f9566fe0001a8bab9/1612417495057-PS4GQD5Z4PAA0HVF8LQQ/IMG_5320.JPG" alt="X-100 Infinity Wing Upgrade" loading="lazy">
+                <div class="design-info">
+                    <h3>X-100 Infinity Wing Upgrade</h3>
+                    <p>Landing gear and rudder upgrade kit for the Infinity Wing V2. Adds a new fuselage with gear and rudder capability.</p>
+                    <div class="design-tags">
+                        <span class="design-tag">Upgrade Kit</span>
+                        <span class="design-tag">LW-PLA / PLA / PETG</span>
+                        <span class="design-tag">Add-on</span>
+                    </div>
+                    <div class="design-actions">
+                        <button class="design-btn design-btn-primary" onclick="event.stopPropagation(); openModal('upgrade')">View Details</button>
+                        <a class="design-btn design-btn-outline" href="https://www.3daeroventures.com/infinitywingv2upgrade" target="_blank" onclick="event.stopPropagation()">Source Files</a>
+                        <a class="design-btn design-btn-outline" href="https://www.3daeroventures.com/s/X-100-Infinity-Wing-Upgrade-Build-Guide-03252021.pdf" target="_blank" onclick="event.stopPropagation()" style="color:#00d68f;border-color:rgba(0,214,143,0.3);">Guide</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <p style="text-align: center; margin-top: 32px; color: #8b95a1; font-size: 14px;">
+            All designs by <a href="https://www.3daeroventures.com" target="_blank" style="color: #00A8FF;">3DAeroventures</a>. Files are free to download for personal use. We provide the printing service.
+        </p>
+    </div>
+</section>
+
+<!-- PRICING -->
+<section class="section" id="pricing" style="background: rgba(255,255,255,0.01);">
+    <div class="container">
+        <h2 class="section-title">Simple, Transparent Pricing</h2>
+        <p class="section-subtitle">No hidden fees. Pick the option that works best for your project.</p>
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <h3>Custom Print Job</h3>
+                <div class="price">$0.15<span style="font-size:18px;">/cm&sup3;</span></div>
+                <div class="price-sub">+ $15 design review fee</div>
+                <ul>
+                    <li>You send us your STL/OBJ/3MF file</li>
+                    <li>We review and optimize print settings</li>
+                    <li>PLA, PETG, TPU materials available</li>
+                    <li>Quality checked before shipping</li>
+                    <li>Shipping calculated at checkout</li>
+                </ul>
+                <a href="#contact" class="btn-primary" style="width:100%; display:block; text-align:center;">Get a Quote</a>
+            </div>
+            <div class="pricing-card featured">
+                <h3>RC Airplane Kit</h3>
+                <div class="price">$80–$200</div>
+                <div class="price-sub">per complete airframe kit</div>
+                <ul>
+                    <li>Complete printed airframe, ready to build</li>
+                    <li>Printed in lightweight LW-PLA</li>
+                    <li>All parts labeled and organized</li>
+                    <li>Build guide link included</li>
+                    <li>Free shipping on orders over $150</li>
+                </ul>
+                <a href="#contact" class="btn-primary" style="width:100%; display:block; text-align:center;">Order a Kit</a>
+            </div>
+            <div class="pricing-card">
+                <h3>Printer Time Rental</h3>
+                <div class="price">$2.50<span style="font-size:18px;">/hr</span></div>
+                <div class="price-sub">+ $10 setup fee per job</div>
+                <ul>
+                    <li>Best for large or batch print jobs</li>
+                    <li>You provide the files, we run the printers</li>
+                    <li>Multiple printers available simultaneously</li>
+                    <li>Material cost added at market rate</li>
+                    <li>Priority queue available</li>
+                </ul>
+                <a href="#contact" class="btn-primary" style="width:100%; display:block; text-align:center;">Book Printer Time</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq">
+    <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">Got questions? Here are the most common ones.</p>
+        <div class="faq-list">
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    What file formats do you accept?
+                    <span class="arrow">+</span>
+                </button>
+                <div class="faq-answer">We accept STL, OBJ, and 3MF files. If you have a different format, reach out and we'll see if we can work with it. For RC airplane kits, you don't need to send any files — just tell us which design you want and we'll handle the rest.</div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    What materials do you print with?
+                    <span class="arrow">+</span>
+                </button>
+                <div class="faq-answer">We offer PLA, LW-PLA (lightweight foaming PLA — ideal for RC planes), PETG, and TPU. Our RC airplane kits are printed in LW-PLA by default for the best weight-to-strength ratio. For custom jobs we'll recommend the best material for your project.</div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    How long does it take to get my print?
+                    <span class="arrow">+</span>
+                </button>
+                <div class="faq-answer">Most jobs are printed and shipped within 3-7 business days depending on complexity. RC airplane kits may take 5-10 days as they have many parts. We'll give you an estimated timeline when you submit your order.</div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    Do I need to download the RC airplane files myself?
+                    <span class="arrow">+</span>
+                </button>
+                <div class="faq-answer">For our recommended designs from 3DAeroventures, you can download the free files for your personal use directly from their website. Then either send us the files to print, or simply tell us which design you want and we'll handle everything. The designs are free — you're paying for our printing and shipping service.</div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    What do I need besides the printed airframe to fly?
+                    <span class="arrow">+</span>
+                </button>
+                <div class="faq-answer">You'll need electronics to complete your RC airplane: a motor, ESC (electronic speed controller), servos, propeller, battery, and a radio transmitter/receiver. Each design page on 3DAeroventures includes recommended components. We can help point you in the right direction.</div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    How do I pay?
+                    <span class="arrow">+</span>
+                </button>
+                <div class="faq-answer">We accept all major credit cards, debit cards, and PayPal through our secure payment processor. You'll receive an invoice with a payment link after we confirm your order details and pricing.</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section contact-section" id="contact">
+    <div class="container">
+        <h2 class="section-title">Get a Free Quote</h2>
+        <p class="section-subtitle">Tell us about your project and we'll get back to you within 24 hours.</p>
+        <div class="contact-grid">
+            <div>
+                <h3 style="font-size: 22px; margin-bottom: 12px;">Ready to get started?</h3>
+                <p style="color: #8b95a1; margin-bottom: 24px;">Whether you want an RC airplane kit printed or have your own custom project, we're here to help. Send us a message with the details and we'll provide a free quote.</p>
+                <div style="margin-bottom: 16px;">
+                    <div style="color: #00A8FF; font-weight: 600; font-size: 14px; margin-bottom: 4px;">Email Us</div>
+                    <a href="mailto:bampmediasa@gmail.com" style="color: #c0c8d0; text-decoration: none;">bampmediasa@gmail.com</a>
+                </div>
+                <div style="margin-bottom: 16px;">
+                    <div style="color: #00A8FF; font-weight: 600; font-size: 14px; margin-bottom: 4px;">Turnaround Time</div>
+                    <span style="color: #c0c8d0;">3–7 business days for most jobs</span>
+                </div>
+                <div>
+                    <div style="color: #00A8FF; font-weight: 600; font-size: 14px; margin-bottom: 4px;">Shipping</div>
+                    <span style="color: #c0c8d0;">USPS / UPS — Free on orders over $150</span>
+                </div>
+            </div>
+            <div>
+                <form class="contact-form" onsubmit="handleSubmit(event)">
+                    <label for="contact-name" class="sr-only">Your Name</label>
+                    <input id="contact-name" type="text" placeholder="Your Name" required>
+                    <label for="contact-email" class="sr-only">Your Email</label>
+                    <input id="contact-email" type="email" placeholder="Your Email" required>
+                    <label for="contact-service" class="sr-only">Service Type</label>
+                    <select id="contact-service" style="width:100%; padding:14px 16px; background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.1); border-radius:10px; color:white; font-family:'Inter',sans-serif; font-size:15px; margin-bottom:12px; appearance:none;">
+                        <option value="" style="background:#1a2028;">What do you need?</option>
+                        <option value="rc-kit" style="background:#1a2028;">RC Airplane Kit</option>
+                        <option value="custom-print" style="background:#1a2028;">Custom 3D Print Job</option>
+                        <option value="printer-rental" style="background:#1a2028;">Printer Time Rental</option>
+                        <option value="other" style="background:#1a2028;">Other / Question</option>
+                    </select>
+                    <label for="contact-message" class="sr-only">Your Message</label>
+                    <textarea id="contact-message" placeholder="Tell us about your project — what design or file, material preference, quantity, etc."></textarea>
+                    <button type="submit" class="btn-primary" style="width: 100%; text-align: center;">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="logo">Layer<span>Drop</span>3D</div>
+                <p>Your ideas, printed and delivered. Professional 3D printing services for RC enthusiasts, makers, and creators.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Services</h4>
+                <a href="#services">Custom Print Jobs</a>
+                <a href="#designs">RC Airplane Kits</a>
+                <a href="#pricing">Printer Time Rental</a>
+                <a href="#pricing">Pricing</a>
+            </div>
+            <div class="footer-links">
+                <h4>Support</h4>
+                <a href="#faq">FAQ</a>
+                <a href="#contact">Contact Us</a>
+                <a href="mailto:bampmediasa@gmail.com">Email</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 LayerDrop3D. All rights reserved.
+        </div>
+    </div>
+</footer>
+
+<!-- MODALS -->
+<div class="modal-overlay" id="modal-overlay" onclick="closeModal(event)">
+    <div class="modal" onclick="event.stopPropagation()">
+        <button class="modal-close" onclick="closeModal()">&times;</button>
+        <img class="modal-img" id="modal-img" src="" alt="">
+        <div class="modal-body">
+            <h2 id="modal-title"></h2>
+            <p class="modal-subtitle" id="modal-subtitle"></p>
+            <div id="modal-content"></div>
+            <div class="modal-footer">
+                <a id="modal-guide-link" href="#" target="_blank" style="text-align:center;flex:1;padding:12px 20px;border-radius:10px;font-size:14px;font-weight:700;text-decoration:none;cursor:pointer;border:none;transition:all 0.2s;background:rgba(0,214,143,0.1);color:#00d68f;border:1px solid rgba(0,214,143,0.25);display:none;">Assembly Guide</a>
+                <a id="modal-source-link" href="#" target="_blank" class="btn-secondary" style="text-align:center;">Download Files (Free)</a>
+                <a href="#contact" class="btn-primary" style="text-align:center;" onclick="closeModal()">Order This Kit</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+const designs = {
+    infinitywing: {
+        title: "X-100 Infinity Wing V2",
+        subtitle: "A versatile flying wing perfect for getting into 3D printed RC aircraft. The \"super-structure\" design style makes it strong enough to print in multiple materials.",
+        img: "https://images.squarespace-cdn.com/content/v1/5d38652f9566fe0001a8bab9/1597857980008-Y46PKD2EYN2B8LDRZLK7/Infinity+Wing+v2-4.jpg",
+        link: "https://www.3daeroventures.com/infinitywingv2",
+        features: ["3-Channel: Throttle, Aileron, Elevator (Elevons)", "\"Super-structure\" design — strong and lightweight", "Compatible with LW-PLA, PLA, ABS/ASA, and PETG", "Removable wings for easy transportation", "Includes optional takeoff dolly design", "3D printable TPE/TPU wheels", "Sport aerobatics capable"],
+        includes: ["All STL files for printing", "Slicer profiles for Simplify3D, Cura, and PrusaSlicer", "Recommended settings for different materials", "PDF Build Guide", "Generic Gcode for i3 style printers"],
+        printEstimate: "$80 – $100",
+        guide: "https://www.3daeroventures.com/s/X-100-Infinity-Wing-V2-Build-Guide-01312021.pdf",
+        guideName: "Build Guide (PDF)"
+    },
+    b17: {
+        title: "B-17G Flying Fortress",
+        subtitle: "A stunning scale model of the iconic WWII bomber. One of the most detailed 3D printed RC planes available, complete with scale features and optional retracts.",
+        img: "https://images.squarespace-cdn.com/content/v1/5d38652f9566fe0001a8bab9/1675118871149-OD32CAEGCHB6MPWRV541/1+-+3DAeroventures+B-17G+med+res.jpg",
+        link: "https://www.3daeroventures.com/b-17flyingfortress",
+        features: ["6-Channel: Throttle, Aileron, Elevator, Rudder, Flaps, Retracts", "Scale details: panel lines, TPU tires, dummy radial engines", "\"Super-structure\" design for LW-PLA printing", "Removable wingtips for easier transportation", "Includes both B-17G and F variant nose pieces", "Lower cost fixed gear option available", "Budget electric motor recommendations included"],
+        includes: ["All STL files for printing", "Simplify3D factory files and profiles", "PDF Setup and Hardware Guide", "Generic Gcode for i3 style printers"],
+        printEstimate: "$150 – $200",
+        guide: "https://www.3daeroventures.com/s/B-17-Flying-Fortress-Specs-Recommended-Setup-and-Hardware-Guide-02022023.pdf",
+        guideName: "Setup & Hardware Guide (PDF)"
+    },
+    chipmunk: {
+        title: "Super Chipmunk",
+        subtitle: "A 4-channel aerobatic aircraft with carbon fiber reinforcement and beautiful scale features. A tribute to Art Scholl's legendary aerobatic Super Chipmunk.",
+        img: "https://images.squarespace-cdn.com/content/v1/5d38652f9566fe0001a8bab9/1609040169910-GYS4P7A2NC99QCT72X3D/6%2B-%2BSuper%2BChipmunk%2Bon%2BStage.jpg",
+        link: "https://www.3daeroventures.com/superchipmunk",
+        features: ["4-Channel: Throttle, Aileron, Elevator, Rudder", "Carbon fiber reinforced for aerobatic durability", "Scale features and realistic details", "\"Super-structure\" design for strength", "Suitable for LW-PLA printing", "Intermediate skill level recommended", "Budget motor recommendations included"],
+        includes: ["All STL files for printing", "Slicer profiles and factory files", "PDF Build Guide", "Generic Gcode for i3 style printers"],
+        printEstimate: "$90 – $120",
+        guide: "https://static1.squarespace.com/static/5d38652f9566fe0001a8bab9/t/61cdd8a6170c3473f4877bc6/1640880300774/Super+Chipmunk+Build+Guide+12.30.2021.pdf",
+        guideName: "Build Guide (PDF)"
+    },
+    sportcam: {
+        title: "Micro SportCam",
+        subtitle: "A sub-250g twin-boom pusher inspired by the AirCam. Perfect for beginners — lightweight, easy to build, and forgiving to fly.",
+        img: "https://images.squarespace-cdn.com/content/v1/5d38652f9566fe0001a8bab9/1590776340133-LW5ZJLKP5JWKHEKGLV7L/1-+MSC.JPG",
+        link: "https://www.3daeroventures.com/microsportcam",
+        features: ["4-Channel: Throttle, Aileron, Elevator, Rudder", "Sub-250g in LW-PLA — no registration required in many areas", "Twin-boom pusher configuration", "Beginner-friendly flight characteristics", "Inspired by the real AirCam aircraft", "Simple construction — great first build", "Budget motor recommendations included"],
+        includes: ["All STL files for printing", "Slicer profiles for Simplify3D, Cura, and PrusaSlicer", "PDF Build Guide", "Generic Gcode for i3 style printers"],
+        printEstimate: "$80 – $95",
+        guide: "https://www.3daeroventures.com/s/Micro-SportCam-Build-Guide-05152020.pdf",
+        guideName: "Build Guide (PDF)"
+    },
+    miniinfinity: {
+        title: "Mini X-100 Infinity Wing",
+        subtitle: "The compact speed demon of the family. Same great flying characteristics as the V2 but smaller and much faster — reaching speeds over 80mph.",
+        img: "https://images.squarespace-cdn.com/content/v1/5d38652f9566fe0001a8bab9/1629864417429-Z3PU4GJ1A5TRKNT2K8OT/IMG_5706.jpg",
+        link: "https://www.3daeroventures.com/miniinfinitywing",
+        features: ["3-Channel: Throttle, Aileron, Elevator (Elevons)", "Reaches 80mph+ with recommended speed prop", "\"Sandwich-structure\" design for strength at small scale", "LW-PLA required — PLA is too heavy for this size", "Optional takeoff dolly included", "3D printable TPU belly wheel and tailwheel", "Sport aerobatics capable"],
+        includes: ["All STL files for printing", "Slicer profiles for Simplify3D, Cura, and PrusaSlicer (LW-PLA)", "PDF Build Guide", "Generic Gcode for i3 style printers"],
+        printEstimate: "$80 – $95",
+        guide: "https://static1.squarespace.com/static/5d38652f9566fe0001a8bab9/t/6125bd4483fc724966ae3f18/1629863251219/Mini+X-100+Infinity+Wing+Build+Guide+08.24.2021.pdf",
+        guideName: "Build Guide (PDF)"
+    },
+    upgrade: {
+        title: "X-100 Infinity Wing Upgrade",
+        subtitle: "An upgrade kit that adds landing gear and rudder capability to the X-100 Infinity Wing V2. Takes the Infinity Wing to a whole new level.",
+        img: "https://images.squarespace-cdn.com/content/v1/5d38652f9566fe0001a8bab9/1612417495057-PS4GQD5Z4PAA0HVF8LQQ/IMG_5320.JPG",
+        link: "https://www.3daeroventures.com/infinitywingv2upgrade",
+        features: ["Adds landing gear and rudder to your Infinity Wing V2", "New fuselage design with integrated gear", "Compatible with LW-PLA, LW-ASA, PLA, ABS/ASA, PETG", "3D printable TPE/TPU main wheels and tailwheel", "Requires the Infinity Wing V2 base file set", "\"Super-structure\" design style"],
+        includes: ["All upgrade STL files", "Simplify3D factory files", "Cura and PrusaSlicer profiles", "Recommended settings for different materials", "PDF Build Guide", "Generic Gcode for i3 style printers"],
+        printEstimate: "$40 – $60 (add-on)",
+        guide: "https://www.3daeroventures.com/s/X-100-Infinity-Wing-Upgrade-Build-Guide-03252021.pdf",
+        guideName: "Build Guide (PDF)"
+    }
+};
+
+function openModal(id) {
+    const d = designs[id];
+    if (!d) return;
+    document.getElementById('modal-img').src = d.img;
+    document.getElementById('modal-img').alt = d.title;
+    document.getElementById('modal-title').textContent = d.title;
+    document.getElementById('modal-subtitle').textContent = d.subtitle;
+    document.getElementById('modal-source-link').href = d.link;
+
+    const guideLink = document.getElementById('modal-guide-link');
+    if (d.guide) {
+        guideLink.href = d.guide;
+        guideLink.style.display = 'block';
+    } else {
+        guideLink.style.display = 'none';
+    }
+
+    let html = '<div class="modal-section"><h4>Features</h4><ul>';
+    d.features.forEach(f => html += `<li>${f}</li>`);
+    html += '</ul></div>';
+
+    html += '<div class="modal-section"><h4>What\'s In The Download</h4><ul>';
+    d.includes.forEach(i => html += `<li>${i}</li>`);
+    html += '</ul></div>';
+
+    html += `<div class="modal-section"><h4>Estimated Print Cost</h4><p style="color:#00A8FF;font-size:20px;font-weight:800;">${d.printEstimate}</p><p style="color:#8b95a1;font-size:13px;">Printed in LW-PLA, includes all airframe parts. Shipping extra.</p></div>`;
+
+    if (d.guide) {
+        html += `<div class="modal-section"><h4>Assembly Guide</h4><a href="${d.guide}" target="_blank" style="display:inline-flex;align-items:center;gap:8px;background:rgba(0,168,255,0.08);border:1px solid rgba(0,168,255,0.25);color:#00A8FF;padding:10px 18px;border-radius:10px;text-decoration:none;font-weight:600;font-size:14px;transition:all 0.2s;" onmouseover="this.style.background='rgba(0,168,255,0.15)'" onmouseout="this.style.background='rgba(0,168,255,0.08)'"><span style="font-size:14px;">PDF</span> ${d.guideName}</a><p style="color:#8b95a1;font-size:13px;margin-top:8px;">Official assembly guide from 3DAeroventures with step-by-step build instructions.</p></div>`;
+    }
+
+    document.getElementById('modal-content').innerHTML = html;
+    document.getElementById('modal-overlay').classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeModal(e) {
+    if (e && e.target !== document.getElementById('modal-overlay')) return;
+    document.getElementById('modal-overlay').classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+function toggleFaq(el) {
+    const answer = el.nextElementSibling;
+    const isOpen = answer.classList.contains('open');
+    document.querySelectorAll('.faq-answer').forEach(a => a.classList.remove('open'));
+    document.querySelectorAll('.faq-question').forEach(q => q.classList.remove('active'));
+    if (!isOpen) {
+        answer.classList.add('open');
+        el.classList.add('active');
+    }
+}
+
+function handleSubmit(e) {
+    e.preventDefault();
+    const form = e.target;
+    const name = form.querySelector('input[type="text"]').value;
+    const email = form.querySelector('input[type="email"]').value;
+    const service = form.querySelector('select').value;
+    const message = form.querySelector('textarea').value;
+
+    const subject = encodeURIComponent(`LayerDrop3D Quote Request - ${service || 'General'}`);
+    const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nService: ${service || 'Not specified'}\n\n${message}`);
+    window.location.href = `mailto:bampmediasa@gmail.com?subject=${subject}&body=${body}`;
+}
+
+// ===== SHOP PRODUCTS =====
+const shopProducts = [
+    // SEASONAL — Spring/Mother's Day (April-May)
+    { name: "Geometric Succulent Planter", price: "$18", cat: ["seasonal","home"], badge: "Spring", badgeType: "seasonal",
+      desc: "Modern geometric planter perfect for small succulents. Low-poly design in your choice of color.",
+      img: "https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?w=400&h=300&fit=crop" },
+    { name: "Personalized Photo Lithophane", price: "$25", cat: ["seasonal","gifts"], badge: "Mother's Day", badgeType: "seasonal",
+      desc: "Turn any photo into a stunning 3D lithophane that glows when backlit. The perfect personalized gift.",
+      img: "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=400&h=300&fit=crop" },
+    { name: "Self-Watering Planter Pot", price: "$22", cat: ["home","gadgets"], badge: "Popular",
+      desc: "Clever two-piece design waters your plants from below. Set it and forget it for up to 2 weeks.",
+      img: "https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=400&h=300&fit=crop" },
+
+    // SEASONAL — Father's Day/Summer (June-July)
+    { name: "American Flag Can Coozie", price: "$12", cat: ["seasonal","gadgets"], badge: "4th of July", badgeType: "seasonal",
+      desc: "Stars and stripes can holder. Keeps your drink cold at the cookout. Fits standard 12oz cans.",
+      img: "https://images.unsplash.com/photo-1498931299210-d53b5ca2a6f5?w=400&h=300&fit=crop" },
+    { name: "Desk Cable Organizer System", price: "$15", cat: ["gadgets","gifts"], badge: "Best Seller",
+      desc: "Modular cable management clips that mount to your desk edge. Clean up your workspace for good.",
+      img: "https://images.unsplash.com/photo-1593062096033-9a26b09da705?w=400&h=300&fit=crop" },
+    { name: "Headphone Stand", price: "$20", cat: ["gadgets","gifts"], badge: "Father's Day", badgeType: "seasonal",
+      desc: "Sleek minimal headphone holder for your desk. Weighted base keeps it steady. Fits all headphone sizes.",
+      img: "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=400&h=300&fit=crop" },
+
+    // SEASONAL — Halloween/Fall (Sept-Oct)
+    { name: "Articulated Dragon", price: "$28", cat: ["seasonal","gifts"], badge: "#1 on Etsy", badgeType: "seasonal",
+      desc: "Fully articulated 3D printed dragon with flexible joints. A showpiece that moves. Multiple color options.",
+      img: "https://images.unsplash.com/photo-1577401239170-897c3aee48e2?w=400&h=300&fit=crop" },
+    { name: "Spooky Skull Planter", price: "$16", cat: ["seasonal","home"], badge: "Halloween", badgeType: "seasonal",
+      desc: "Realistic skull planter — perfect for succulents, candy, or spooky decor. Drainage hole included.",
+      img: "https://images.unsplash.com/photo-1509557965875-b88c97052f0e?w=400&h=300&fit=crop" },
+    { name: "Geometric Pumpkin Set (3pc)", price: "$24", cat: ["seasonal","home"], badge: "Fall", badgeType: "seasonal",
+      desc: "Set of 3 modern low-poly pumpkins in small, medium, and large. Timeless fall decor that lasts forever.",
+      img: "https://images.unsplash.com/photo-1508747703725-719135d78036?w=400&h=300&fit=crop" },
+
+    // SEASONAL — Christmas/Holiday (Nov-Dec)
+    { name: "Custom Name Ornament", price: "$10", cat: ["seasonal","gifts"], badge: "Christmas", badgeType: "seasonal",
+      desc: "Personalized ornament with any name. Choice of snowflake, star, or classic round frame. Gift-boxed.",
+      img: "https://images.unsplash.com/photo-1512909006721-3d6018887383?w=400&h=300&fit=crop" },
+    { name: "Modern Christmas Tree (Tabletop)", price: "$22", cat: ["seasonal","home"], badge: "Holiday", badgeType: "seasonal",
+      desc: "Minimalist spiral Christmas tree for your desk or mantle. 8 inches tall. Available in green, white, or gold.",
+      img: "https://images.unsplash.com/photo-1545048702-79362596cdc9?w=400&h=300&fit=crop" },
+
+    // YEAR-ROUND — Home Decor
+    { name: "Floating Wall Shelf (Honeycomb)", price: "$18", cat: ["home"], badge: "Popular",
+      desc: "Hexagonal wall shelf for small plants, crystals, or decor. Mounts with included adhesive strip. Set of 3.",
+      img: "https://images.unsplash.com/photo-1533090161767-e6ffed986c88?w=400&h=300&fit=crop" },
+    { name: "Modern Vase Collection", price: "$20", cat: ["home","gifts"], badge: "New",
+      desc: "Twisted geometric vase for dried flowers or pampass grass. Watertight inner liner included. 8 inches tall.",
+      img: "https://images.unsplash.com/photo-1612196808214-b8e1d6145a8c?w=400&h=300&fit=crop" },
+
+    // YEAR-ROUND — Gadgets & Tools
+    { name: "Modular Drawer Organizer Set", price: "$16", cat: ["gadgets","home"], badge: "Useful",
+      desc: "Customizable drawer dividers that snap together. Tell us your drawer dimensions and we'll size them perfectly.",
+      img: "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=400&h=300&fit=crop" },
+    { name: "Phone Stand (Adjustable)", price: "$14", cat: ["gadgets"], badge: "Best Seller",
+      desc: "Foldable phone/tablet stand with adjustable viewing angle. Works with any phone. Desk or nightstand ready.",
+      img: "https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=400&h=300&fit=crop" },
+    { name: "Key Holder Wall Mount", price: "$15", cat: ["home","gadgets"], badge: "Practical",
+      desc: "Wall-mounted key rack with 4 hooks and a small tray for coins/wallet. Never lose your keys again.",
+      img: "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=400&h=300&fit=crop" },
+
+    // YEAR-ROUND — Gifts
+    { name: "Custom Cookie Cutter (Any Shape)", price: "$8", cat: ["gifts","gadgets"], badge: "Custom",
+      desc: "Send us any outline and we'll make a food-safe cookie cutter. Names, logos, animals — if you can draw it, we can cut it.",
+      img: "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=400&h=300&fit=crop" },
+    { name: "Articulated Fidget Octopus", price: "$12", cat: ["gifts"], badge: "Fun",
+      desc: "Cute articulated octopus with flexible tentacles. Great desk toy, stress reliever, or kid gift. Multiple colors.",
+      img: "https://images.unsplash.com/photo-1545671913-b89ac1b4ac10?w=400&h=300&fit=crop" },
+];
+
+function renderShop(filter = 'all') {
+    const grid = document.getElementById('shop-grid');
+    const filtered = filter === 'all' ? shopProducts : shopProducts.filter(p => p.cat.includes(filter));
+    grid.innerHTML = filtered.map(p => `
+        <div class="shop-item" onclick="shopItemClick('${encodeURIComponent(p.name)}', '${p.price}')">
+            <img class="shop-item-img" src="${p.img}" alt="${p.name}" loading="lazy">
+            <div class="shop-item-body">
+                <h3>${p.name}</h3>
+                <p>${p.desc}</p>
+                <div class="shop-item-footer">
+                    <span class="shop-item-price">${p.price}</span>
+                    <span class="shop-item-badge ${p.badgeType === 'seasonal' ? 'seasonal' : ''}">${p.badge}</span>
+                </div>
+            </div>
+        </div>
+    `).join('');
+}
+
+function filterShop(cat) {
+    document.querySelectorAll('.shop-cat-btn').forEach(b => b.classList.remove('active'));
+    event.target.classList.add('active');
+    renderShop(cat);
+}
+
+function shopItemClick(name, price) {
+    const decoded = decodeURIComponent(name);
+    const subject = encodeURIComponent(`LayerDrop3D Order Inquiry - ${decoded}`);
+    const body = encodeURIComponent(`Hi! I'd like to order:\n\nItem: ${decoded}\nListed Price: ${price}\n\nPlease let me know about color options, shipping, and payment. Thanks!`);
+    window.location.href = `mailto:bampmediasa@gmail.com?subject=${subject}&body=${body}`;
+}
+
+// Render shop on page load
+renderShop();
+
+// Smooth scrolling
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', function(e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            document.querySelector('nav')?.classList.remove('open');
+        }
+    });
+});
+</script>
+
+</body>
+</html>
+>>>>>>> c9ef6f1 (Update: real 3D printer photos, RC plane images, SVG icons, no emoji)

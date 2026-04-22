@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LayerDrop3D Logo</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 40px;
+            background: #0f1419;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
+
+        .logo-container {
+            display: flex;
+            flex-direction: column;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .logo-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo-section h3 {
+            color: #00A8FF;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin: 0;
+        }
+
+        /* Full Logo Version */
+        .full-logo {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            background: rgba(0, 168, 255, 0.05);
+            padding: 30px 40px;
+            border-radius: 12px;
+            border: 1px solid rgba(0, 168, 255, 0.1);
+        }
+
+        .logo-icon {
+            width: 80px;
+            height: 80px;
+        }
+
+        .logo-text {
+            font-size: 32px;
+            font-weight: 700;
+            color: #ffffff;
+            letter-spacing: -0.5px;
+            margin: 0;
+        }
+
+        /* Icon Versions */
+        .icon-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+        .icon-version {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .icon-box {
+            width: 120px;
+            height: 120px;
+            background: rgba(0, 168, 255, 0.05);
+            border: 1px solid rgba(0, 168, 255, 0.2);
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .icon-label {
+            font-size: 12px;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* SVG Icon */
+        svg {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+        <!-- Full Logo -->
+        <div class="logo-section">
+            <h3>Full Logo</h3>
+            <div class="full-logo">
+                <svg class="logo-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Geometric 3D Printer Icon -->
+                    <!-- Top layer (extrusion head) -->
+                    <circle cx="50" cy="30" r="8" fill="none" stroke="#00A8FF" stroke-width="2"/>
+                    <line x1="50" y1="38" x2="50" y2="55" stroke="#00A8FF" stroke-width="1.5"/>
+
+                    <!-- Middle layers (printed object) -->
+                    <path d="M 35 50 L 50 40 L 65 50 L 65 70 L 35 70 Z" fill="none" stroke="#00A8FF" stroke-width="2"/>
+                    <line x1="35" y1="55" x2="65" y2="55" stroke="#00A8FF" stroke-width="1" opacity="0.5"/>
+                    <line x1="35" y1="60" x2="65" y2="60" stroke="#00A8FF" stroke-width="1" opacity="0.5"/>
+                    <line x1="35" y1="65" x2="65" y2="65" stroke="#00A8FF" stroke-width="1" opacity="0.5"/>
+
+                    <!-- Base/Build plate -->
+                    <rect x="28" y="72" width="44" height="4" fill="#00A8FF" opacity="0.3"/>
+                    <line x1="28" y1="72" x2="72" y2="72" stroke="#00A8FF" stroke-width="1.5"/>
+
+                    <!-- Accent: descending dot pattern (representing layers) -->
+                    <circle cx="85" cy="35" r="2" fill="#00A8FF"/>
+                    <circle cx="87" cy="45" r="1.5" fill="#00A8FF" opacity="0.6"/>
+                </svg>
+                <p class="logo-text">LayerDrop3D</p>
+            </div>
+        </div>
+
+        <!-- Icon Versions -->
+        <div class="logo-section">
+            <h3>Icon Versions (For Social Media & Favicon)</h3>
+            <div class="icon-grid">
+                <!-- Icon Only -->
+                <div class="icon-version">
+                    <div class="icon-box">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="30" r="8" fill="none" stroke="#00A8FF" stroke-width="2"/>
+                            <line x1="50" y1="38" x2="50" y2="55" stroke="#00A8FF" stroke-width="1.5"/>
+                            <path d="M 35 50 L 50 40 L 65 50 L 65 70 L 35 70 Z" fill="none" stroke="#00A8FF" stroke-width="2"/>
+                            <line x1="35" y1="55" x2="65" y2="55" stroke="#00A8FF" stroke-width="1" opacity="0.5"/>
+                            <line x1="35" y1="60" x2="65" y2="60" stroke="#00A8FF" stroke-width="1" opacity="0.5"/>
+                            <line x1="35" y1="65" x2="65" y2="65" stroke="#00A8FF" stroke-width="1" opacity="0.5"/>
+                            <rect x="28" y="72" width="44" height="4" fill="#00A8FF" opacity="0.3"/>
+                            <line x1="28" y1="72" x2="72" y2="72" stroke="#00A8FF" stroke-width="1.5"/>
+                        </svg>
+                    </div>
+                    <p class="icon-label">Icon Only</p>
+                </div>
+
+                <!-- Icon + Monogram -->
+                <div class="icon-version">
+                    <div class="icon-box">
+                        <div style="display: flex; flex-direction: column; align-items: center; gap: 4px; width: 100%; height: 100%; justify-content: center;">
+                            <svg style="width: 50px; height: 50px;" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="30" r="8" fill="none" stroke="#00A8FF" stroke-width="2"/>
+                                <line x1="50" y1="38" x2="50" y2="55" stroke="#00A8FF" stroke-width="1.5"/>
+                                <path d="M 35 50 L 50 40 L 65 50 L 65 70 L 35 70 Z" fill="none" stroke="#00A8FF" stroke-width="2"/>
+                                <line x1="35" y1="55" x2="65" y2="55" stroke="#00A8FF" stroke-width="1" opacity="0.5"/>
+                                <line x1="35" y1="60" x2="65" y2="60" stroke="#00A8FF" stroke-width="1" opacity="0.5"/>
+                                <line x1="35" y1="65" x2="65" y2="65" stroke="#00A8FF" stroke-width="1" opacity="0.5"/>
+                                <rect x="28" y="72" width="44" height="4" fill="#00A8FF" opacity="0.3"/>
+                                <line x1="28" y1="72" x2="72" y2="72" stroke="#00A8FF" stroke-width="1.5"/>
+                            </svg>
+                            <text style="font-size: 10px; font-weight: bold; fill: #00A8FF; letter-spacing: 1px;">LD3D</text>
+                        </div>
+                    </div>
+                    <p class="icon-label">Icon + Monogram</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Design Notes -->
+        <div class="logo-section" style="max-width: 600px; text-align: center; border-top: 1px solid rgba(0, 168, 255, 0.2); padding-top: 40px;">
+            <h3>Design Details</h3>
+            <div style="color: #aaa; font-size: 14px; line-height: 1.6;">
+                <p>✓ <strong>Modern & Minimalist:</strong> Clean geometric lines, minimal detail</p>
+                <p>✓ <strong>3D Printer Element:</strong> Extrusion head, layered object, build plate</p>
+                <p>✓ <strong>Abstract Geometry:</strong> Pyramid shape represents printed layers</p>
+                <p>✓ <strong>Brand Colors:</strong> #00A8FF blue on #0f1419 dark background</p>
+                <p>✓ <strong>Versatile:</strong> Works at any size, social media profiles, website, t-shirts</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LayerDrop3D Logo v2</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 40px;
+            background: #0f1419;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
+
+        .logo-container {
+            display: flex;
+            flex-direction: column;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .logo-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo-section h3 {
+            color: #00A8FF;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin: 0;
+        }
+
+        /* Full Logo Version */
+        .full-logo {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            background: rgba(0, 168, 255, 0.05);
+            padding: 30px 40px;
+            border-radius: 12px;
+            border: 1px solid rgba(0, 168, 255, 0.1);
+        }
+
+        .logo-icon {
+            width: 90px;
+            height: 90px;
+        }
+
+        .logo-text-section {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+
+        .logo-text {
+            font-size: 32px;
+            font-weight: 700;
+            color: #ffffff;
+            letter-spacing: -0.5px;
+            margin: 0;
+        }
+
+        .logo-monogram {
+            font-size: 11px;
+            color: #00A8FF;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-top: 4px;
+        }
+
+        /* Icon Versions */
+        .icon-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+        .icon-version {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .icon-box {
+            width: 120px;
+            height: 120px;
+            background: rgba(0, 168, 255, 0.05);
+            border: 1px solid rgba(0, 168, 255, 0.2);
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .icon-label {
+            font-size: 12px;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* SVG Icon */
+        svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        .design-notes {
+            max-width: 600px;
+            text-align: center;
+            border-top: 1px solid rgba(0, 168, 255, 0.2);
+            padding-top: 40px;
+        }
+
+        .design-notes p {
+            color: #aaa;
+            font-size: 14px;
+            line-height: 1.6;
+            margin: 8px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+        <!-- Full Logo -->
+        <div class="logo-section">
+            <h3>Full Logo</h3>
+            <div class="full-logo">
+                <svg class="logo-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Layering Concept: Descending stacked layers forming a droplet shape -->
+
+                    <!-- Top layer (smallest) -->
+                    <rect x="35" y="15" width="30" height="12" rx="2" fill="none" stroke="#00A8FF" stroke-width="2"/>
+
+                    <!-- Second layer -->
+                    <rect x="28" y="30" width="44" height="13" rx="2" fill="none" stroke="#00A8FF" stroke-width="2"/>
+
+                    <!-- Third layer -->
+                    <rect x="22" y="46" width="56" height="14" rx="2" fill="none" stroke="#00A8FF" stroke-width="2"/>
+
+                    <!-- Bottom layer - wider -->
+                    <path d="M 20 62 Q 20 75 50 82 Q 80 75 80 62 Z" fill="none" stroke="#00A8FF" stroke-width="2" stroke-linejoin="round"/>
+
+                    <!-- Accent: glow/depth on bottom -->
+                    <path d="M 25 65 Q 50 72 75 65" fill="none" stroke="#00A8FF" stroke-width="1" opacity="0.4" stroke-linecap="round"/>
+
+                    <!-- Small accent lines showing depth -->
+                    <line x1="40" y1="27" x2="60" y2="27" stroke="#00A8FF" stroke-width="0.8" opacity="0.3"/>
+                    <line x1="32" y1="43" x2="68" y2="43" stroke="#00A8FF" stroke-width="0.8" opacity="0.3"/>
+                </svg>
+                <div class="logo-text-section">
+                    <p class="logo-text">LayerDrop3D</p>
+                    <p class="logo-monogram">LD3D</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Icon Versions -->
+        <div class="logo-section">
+            <h3>Icon Versions (For Social Media & Favicon)</h3>
+            <div class="icon-grid">
+                <!-- Icon Only with Monogram -->
+                <div class="icon-version">
+                    <div class="icon-box">
+                        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%; height: 100%; gap: 4px;">
+                            <svg style="width: 70px; height: 70px;" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="35" y="15" width="30" height="12" rx="2" fill="none" stroke="#00A8FF" stroke-width="2"/>
+                                <rect x="28" y="30" width="44" height="13" rx="2" fill="none" stroke="#00A8FF" stroke-width="2"/>
+                                <rect x="22" y="46" width="56" height="14" rx="2" fill="none" stroke="#00A8FF" stroke-width="2"/>
+                                <path d="M 20 62 Q 20 75 50 82 Q 80 75 80 62 Z" fill="none" stroke="#00A8FF" stroke-width="2" stroke-linejoin="round"/>
+                                <path d="M 25 65 Q 50 72 75 65" fill="none" stroke="#00A8FF" stroke-width="1" opacity="0.4" stroke-linecap="round"/>
+                            </svg>
+                            <text style="font-size: 8px; font-weight: bold; fill: #00A8FF; letter-spacing: 0.5px;">LD3D</text>
+                        </div>
+                    </div>
+                    <p class="icon-label">Icon + Monogram</p>
+                </div>
+
+                <!-- Icon Only (Clean) -->
+                <div class="icon-version">
+                    <div class="icon-box">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="35" y="15" width="30" height="12" rx="2" fill="none" stroke="#00A8FF" stroke-width="2"/>
+                            <rect x="28" y="30" width="44" height="13" rx="2" fill="none" stroke="#00A8FF" stroke-width="2"/>
+                            <rect x="22" y="46" width="56" height="14" rx="2" fill="none" stroke="#00A8FF" stroke-width="2"/>
+                            <path d="M 20 62 Q 20 75 50 82 Q 80 75 80 62 Z" fill="none" stroke="#00A8FF" stroke-width="2" stroke-linejoin="round"/>
+                            <path d="M 25 65 Q 50 72 75 65" fill="none" stroke="#00A8FF" stroke-width="1" opacity="0.4" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <p class="icon-label">Icon Only</p>
+                </div>
+
+                <!-- Solid Version for Dark Backgrounds -->
+                <div class="icon-version">
+                    <div class="icon-box" style="background: rgba(0, 168, 255, 0.1);">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="35" y="15" width="30" height="12" rx="2" fill="#00A8FF" opacity="0.8"/>
+                            <rect x="28" y="30" width="44" height="13" rx="2" fill="#00A8FF" opacity="0.65"/>
+                            <rect x="22" y="46" width="56" height="14" rx="2" fill="#00A8FF" opacity="0.5"/>
+                            <path d="M 20 62 Q 20 75 50 82 Q 80 75 80 62 Z" fill="#00A8FF" opacity="0.35"/>
+                        </svg>
+                    </div>
+                    <p class="icon-label">Solid Variant</p>
+                </div>
+
+                <!-- Favicon Version -->
+                <div class="icon-version">
+                    <div class="icon-box" style="background: #00A8FF;">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="35" y="15" width="30" height="12" rx="2" fill="#0f1419" opacity="0.8"/>
+                            <rect x="28" y="30" width="44" height="13" rx="2" fill="#0f1419" opacity="0.65"/>
+                            <rect x="22" y="46" width="56" height="14" rx="2" fill="#0f1419" opacity="0.5"/>
+                            <path d="M 20 62 Q 20 75 50 82 Q 80 75 80 62 Z" fill="#0f1419" opacity="0.35"/>
+                        </svg>
+                    </div>
+                    <p class="icon-label">Favicon (White on Blue)</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Design Notes -->
+        <div class="logo-section design-notes">
+            <h3>Design Concept: Layering</h3>
+            <p>✓ <strong>Descending Layers:</strong> Shows the 3D printing build process - each layer stacks downward</p>
+            <p>✓ <strong>Droplet Shape:</strong> Bottom layer curves into a droplet, representing "Drop" in LayerDrop3D</p>
+            <p>✓ <strong>Personality:</strong> Dynamic flow and movement, not just geometric</p>
+            <p>✓ <strong>Multiple Versions:</strong> Works as outline, solid, or inverted for any background</p>
+            <p>✓ <strong>LD3D Monogram:</strong> Your preferred lockup for compact use</p>
+            <p style="margin-top: 20px; color: #00A8FF; font-weight: 600;">Better? Need more tweaks?</p>
+        </div>
+    </div>
+</body>
+</html>

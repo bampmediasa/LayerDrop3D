@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LayerDrop3D - Professional Flyer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @page {
+            size: 8.5in 11in;
+            margin: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .flyer {
+            width: 8.5in;
+            height: 11in;
+            background: white;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Header with gradient background */
+        .header {
+            background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
+            color: white;
+            padding: 35px 30px;
+            text-align: center;
+            position: relative;
+            border-bottom: 4px solid #00A8FF;
+        }
+
+        .header-accent {
+            position: absolute;
+            top: -30px;
+            right: -30px;
+            width: 200px;
+            height: 200px;
+            background: rgba(0, 168, 255, 0.1);
+            border-radius: 50%;
+        }
+
+        .header-accent-2 {
+            position: absolute;
+            bottom: -40px;
+            left: -40px;
+            width: 150px;
+            height: 150px;
+            background: rgba(0, 168, 255, 0.08);
+            border-radius: 50%;
+        }
+
+        .logo-header {
+            position: relative;
+            z-index: 2;
+        }
+
+        .logo-box {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #00A8FF 0%, #00D9FF 100%);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: #0a0e27;
+            font-size: 20px;
+            margin-bottom: 12px;
+            box-shadow: 0 4px 12px rgba(0, 168, 255, 0.3);
+        }
+
+        .company-name {
+            font-size: 40px;
+            font-weight: bold;
+            letter-spacing: 3px;
+            margin-bottom: 5px;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .tagline {
+            font-size: 16px;
+            color: #00D9FF;
+            letter-spacing: 1px;
+            font-weight: 500;
+        }
+
+        /* Main content */
+        .content {
+            flex: 1;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .section-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #0a0e27;
+            margin-top: 18px;
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #00A8FF;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .services-list {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 15px;
+            font-size: 13px;
+        }
+
+        .service-item {
+            background: #f0f8ff;
+            padding: 10px 15px;
+            border-left: 3px solid #00A8FF;
+            border-radius: 4px;
+            flex: 1;
+            font-weight: 600;
+            color: #0a0e27;
+        }
+
+        /* Products Grid */
+        .products-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-bottom: 15px;
+        }
+
+        .product-card {
+            background: #f8f9fa;
+            border: 1px solid #e0e0e0;
+            border-left: 4px solid #00A8FF;
+            padding: 12px;
+            border-radius: 6px;
+            font-size: 12px;
+        }
+
+        .product-name {
+            font-weight: bold;
+            color: #0a0e27;
+            margin-bottom: 4px;
+            font-size: 13px;
+        }
+
+        .product-description {
+            color: #555;
+            font-size: 11px;
+            margin-bottom: 6px;
+            line-height: 1.4;
+        }
+
+        .product-price {
+            color: #00A8FF;
+            font-weight: bold;
+            font-size: 12px;
+        }
+
+        /* Coupon Section */
+        .coupon-section {
+            background: linear-gradient(135deg, #fff3cd 0%, #ffe8a1 100%);
+            border: 2px dashed #ffc107;
+            padding: 15px;
+            border-radius: 6px;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .coupon-label {
+            font-size: 12px;
+            color: #856404;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-bottom: 6px;
+        }
+
+        .coupon-code {
+            font-size: 24px;
+            font-weight: bold;
+            color: #000;
+            font-family: 'Courier New', monospace;
+            letter-spacing: 2px;
+            padding: 8px;
+            background: white;
+            border-radius: 4px;
+            display: inline-block;
+            margin-bottom: 6px;
+        }
+
+        .coupon-description {
+            font-size: 11px;
+            color: #856404;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background: #f0f8ff;
+            border-left: 4px solid #00A8FF;
+            padding: 12px;
+            border-radius: 6px;
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+
+        .contact-label {
+            font-weight: bold;
+            color: #0a0e27;
+            margin-bottom: 4px;
+            font-size: 13px;
+        }
+
+        .contact-info {
+            color: #555;
+            margin-bottom: 3px;
+        }
+
+        .contact-info a {
+            color: #00A8FF;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        /* Footer */
+        .footer {
+            background: #f0f0f0;
+            padding: 15px 30px;
+            text-align: center;
+            border-top: 2px solid #00A8FF;
+            margin-top: auto;
+        }
+
+        .footer-text {
+            font-size: 11px;
+            color: #666;
+            margin-bottom: 4px;
+        }
+
+        .website-link {
+            font-size: 14px;
+            font-weight: bold;
+            color: #0a0e27;
+            text-decoration: none;
+            letter-spacing: 0.5px;
+        }
+
+        .website-link:hover {
+            color: #00A8FF;
+        }
+
+        /* Print specific styles */
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .flyer {
+                box-shadow: none;
+            }
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .flyer {
+                width: 100%;
+                height: auto;
+            }
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+            .services-list {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="flyer">
+        <div class="header">
+            <div class="header-accent"></div>
+            <div class="header-accent-2"></div>
+            <div class="logo-header">
+                <div class="logo-box">LD</div>
+                <div class="company-name">LAYERDROP3D</div>
+                <div class="tagline">Custom 3D Printing & RC Airplane Kits</div>
+            </div>
+        </div>
+
+        <div class="content">
+            <!-- Services Overview -->
+            <div class="section-title">Our Services</div>
+            <div class="services-list">
+                <div class="service-item">RC Airframe Kits</div>
+                <div class="service-item">Custom 3D Prints</div>
+                <div class="service-item">Prototyping</div>
+            </div>
+
+            <!-- Featured Products -->
+            <div class="section-title">Featured Products</div>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-name">Sport Flyer Kit</div>
+                    <div class="product-description">Beginner-friendly RC airframe with reinforced wings</div>
+                    <div class="product-price">From $79.99</div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-name">Performance Racer</div>
+                    <div class="product-description">Lightweight aerodynamic design for speed enthusiasts</div>
+                    <div class="product-price">From $129.99</div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-name">Glider Pro</div>
+                    <div class="product-description">Extended wing design for thermal lift capability</div>
+                    <div class="product-price">From $99.99</div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-name">Custom Designs</div>
+                    <div class="product-description">Bespoke 3D printing for unique specifications</div>
+                    <div class="product-price">Quote Available</div>
+                </div>
+            </div>
+
+            <!-- Coupon Banner -->
+            <div class="coupon-section">
+                <div class="coupon-label">EXCLUSIVE OFFER</div>
+                <div class="coupon-code">FIRSTFLIGHT</div>
+                <div class="coupon-description">10% OFF YOUR FIRST ORDER</div>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="contact-section">
+                <div class="contact-label">Get In Touch</div>
+                <div class="contact-info">Email: <a href="mailto:bampmediasa@gmail.com">bampmediasa@gmail.com</a></div>
+                <div class="contact-info">Web: <a href="#">LayerDrop3D.com</a></div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-text">Premium 3D Printed RC Airplane Kits</div>
+            <a href="#" class="website-link">Visit us online: LayerDrop3D.com</a>
+        </div>
+    </div>
+</body>
+</html>

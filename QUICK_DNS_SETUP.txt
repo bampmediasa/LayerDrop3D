@@ -1,0 +1,28 @@
+NAMECHEAP DNS SETUP FOR layerdrop3d.com
+========================================
+
+QUICK COPY-PASTE GUIDE (2 MINUTES):
+
+1. Log into Namecheap: https://www.namecheap.com/
+2. Click "Domain List" (left sidebar)
+3. Click "Manage" next to layerdrop3d.com
+4. Click "Advanced DNS" tab
+
+5. DELETE any existing A records (click trash icon)
+
+6. ADD THESE 4 A RECORDS (click "Add new record" each time):
+   Type: A        Host: @    Value: 185.199.108.153
+   Type: A        Host: @    Value: 185.199.109.153
+   Type: A        Host: @    Value: 185.199.110.153
+   Type: A        Host: @    Value: 185.199.111.153
+
+7. ADD THIS CNAME RECORD:
+   Type: CNAME    Host: www  Value: bampmediasa.github.io
+
+8. Click "Save All Changes" (green button at top)
+
+9. Wait 10-15 minutes for DNS to propagate
+
+10. Test: Visit https://layerdrop3d.com (should show your website)
+
+DONE! 🎉
