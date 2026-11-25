@@ -178,7 +178,7 @@
   .feature-media::before, .feature-media::after { content: ""; position: absolute; width: 24px; height: 24px; border: 2px solid var(--cyan); pointer-events: none; z-index: 2; }
   .feature-media::before { top: -1px; left: -1px; border-right: 0; border-bottom: 0; }
   .feature-media::after { bottom: -1px; right: -1px; border-left: 0; border-top: 0; }
-  .feature-media img { width: 100%; height: 100%; max-height: 560px; object-fit: cover; display: block; }
+  .feature-media img, .feature-media video { width: 100%; height: 100%; max-height: 560px; object-fit: cover; display: block; }
   .feature-media .caption { position: absolute; left: 0; right: 0; bottom: 0; padding: 10px 14px; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.1em; color: var(--cyan); background: rgba(3,6,10,0.78); border-top: 1px solid var(--border); }
   .sale-banner { display: inline-block; font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #000; background: var(--lime); padding: 8px 14px; margin-bottom: 20px; box-shadow: 0 0 18px rgba(180,255,57,0.35); }
   .feature-price { font-family: 'JetBrains Mono', monospace; font-size: 18px; color: var(--lime); margin-bottom: 8px; }
@@ -306,8 +306,8 @@
       </div>
     </div>
     <div class="feature-media reveal">
-      <img src="assets/mini-ski-lift-render.jpg" alt="Digital rendering of the LayerDrop3D mini ski lift kit — full lift line with towers, chairs, and stations" loading="lazy">
-      <div class="caption mono">MINI SKI LIFT KIT · DIGITAL RENDERING</div>
+      <video src="assets/mini-ski-lift-running.mp4" poster="assets/mini-ski-lift-real.jpg" autoplay muted loop playsinline controls aria-label="Video of the LayerDrop3D mini ski lift kit running in a Christmas display"></video>
+      <div class="caption mono">MINI SKI LIFT KIT · RUNNING IN A REAL CHRISTMAS DISPLAY</div>
     </div>
   </div>
 </section>
